@@ -100,6 +100,9 @@ html {
   line-height: 1.2;
   letter-spacing: 0;
 }
+.popup .popup__inner .popup__content .popup__aside .popup__title:lang(uk) {
+  max-width: 298px;
+}
 .popup .popup__inner .popup__content .popup__aside .popup__features {
   display: flex;
   flex-direction: column;
@@ -336,6 +339,9 @@ html {
 .popup .popup__inner .popup__content .popup__body #lead-form .form__card-note:lang(ru) {
   max-width: 354px;
 }
+.popup .popup__inner .popup__content .popup__body #lead-form .form__card-note:lang(uk) {
+  max-width: 352px;
+}
 
 body:has(.popup[open]),
 body:has(.header__nav.active) {
@@ -515,6 +521,9 @@ header .header__container .header__actions .header__contact-btn, header .header_
 .hero .hero__container .hero__title .hero__title-wrap {
   display: inline-block;
 }
+.hero .hero__container .hero__title:lang(uk) {
+  max-width: 724px;
+}
 .hero .hero__container .hero__subtitle {
   max-width: 500px;
   color: #fcfcfc;
@@ -653,6 +662,12 @@ header .header__container .header__actions .header__contact-btn, header .header_
 .about .about__container .about__cards .about__card:first-of-type .about__card-bottom .about__card-text:lang(ru) {
   padding-right: initial;
 }
+.about .about__container .about__cards .about__card:first-of-type .about__card-bottom .about__card-text:lang(uk) {
+  padding-right: initial;
+}
+.about .about__container .about__cards .about__card:first-of-type .about__card-bottom .about__card-text .card-text__devider {
+  display: inline-block;
+}
 .about .about__container .about__cards .about__card:nth-of-type(2) .about__card-top .about__card-icon {
   position: relative;
   bottom: 3px;
@@ -668,6 +683,9 @@ header .header__container .header__actions .header__contact-btn, header .header_
 }
 .about .about__container .about__cards .about__card:nth-of-type(3) .about__card-bottom .about__card-text:lang(ru) {
   padding-right: 6px;
+}
+.about .about__container .about__cards .about__card:nth-of-type(3) .about__card-bottom .about__card-text:lang(uk) {
+  padding-right: initial;
 }
 .about .about__container .about__cards .about__card:nth-of-type(4) .about__card-bottom .about__card-text .card-text__devider {
   display: inline-block;
@@ -688,6 +706,9 @@ header .header__container .header__actions .header__contact-btn, header .header_
 }
 .about .about__container .about__cards .about__card:nth-of-type(5) .about__card-bottom .about__card-text:lang(ru) {
   padding-right: 30px;
+}
+.about .about__container .about__cards .about__card:nth-of-type(5) .about__card-bottom .about__card-text:lang(uk) {
+  padding-right: initial;
 }
 .about .about__container .about__cards .about__card.about__card--invert {
   background: #fcfcfc;
@@ -924,11 +945,17 @@ header .header__container .header__actions .header__contact-btn, header .header_
 .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item .accordion__content .accordion__text .accordion__text-devider:lang(ru) {
   display: inline-block;
 }
+.faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:first-of-type .accordion__content .accordion__text:lang(uk) {
+  max-width: 694px;
+}
 .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(2) .accordion__content .accordion__text {
   max-width: 782px;
 }
 .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(2) .accordion__content .accordion__text:lang(ru) {
   max-width: 834px;
+}
+.faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(2) .accordion__content .accordion__text:lang(uk) {
+  max-width: 890px;
 }
 .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(3) .accordion__content .accordion__text {
   max-width: 712px;
@@ -960,11 +987,17 @@ header .header__container .header__actions .header__contact-btn, header .header_
 .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(7) .accordion__content .accordion__text:lang(ru) {
   max-width: 712px;
 }
+.faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(7) .accordion__content .accordion__text:lang(uk) {
+  max-width: 688px;
+}
 .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:last-of-type .accordion__content .accordion__text {
   max-width: 876px;
 }
 .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:last-of-type .accordion__content .accordion__text:lang(ru) {
   max-width: 800px;
+}
+.faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:last-of-type .accordion__content .accordion__text:lang(uk) {
+  max-width: 826px;
 }
 .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item .accordion__text-devider {
   display: inline-block;
@@ -1008,6 +1041,9 @@ footer .footer__container .footer__top .footer__socials .footer__socials-text {
   padding-right: 12px;
 }
 footer .footer__container .footer__top .footer__socials .footer__socials-text:lang(ru) {
+  padding-right: initial;
+}
+footer .footer__container .footer__top .footer__socials .footer__socials-text:lang(uk) {
   padding-right: initial;
 }
 footer .footer__container .footer__top .footer__socials .footer__socials-links {
@@ -1101,6 +1137,9 @@ footer .footer__container .footer__top .footer__open-hours .content__wrap .foote
 }
 footer .footer__container .footer__top .footer__open-hours .content__wrap .footer__hours-list:last-of-type .footer__hours-item:last-of-type, footer .footer__container .footer__top .footer__open-hours .content__wrap .footer__hours-list:first-of-type .footer__hours-item:last-of-type {
   color: #ffdf7b;
+}
+footer .footer__container .footer__top .footer__open-hours .content__wrap .footer__hours-list:last-of-type .footer__hours-item:last-of-type {
+  text-align: center;
 }
 footer .footer__container .footer__top .footer__pay-methods {
   padding: 113px 64px 113px 128px;
@@ -1263,6 +1302,9 @@ footer .footer__container .footer__bottom .footer__copyright {
   header .header__container .header__nav .header__nav-contact:lang(ru) {
     padding: 24px 51px;
   }
+  header .header__container .header__nav .header__nav-contact:lang(uk) {
+    padding: 24px 50px;
+  }
   header .header__container .header__nav .header__nav-socials .header__nav-media .nav-media__img {
     border: 1px solid #e8a93d;
     border-radius: 10px;
@@ -1281,13 +1323,22 @@ footer .footer__container .footer__bottom .footer__copyright {
   .about .about__container .about__cards .about__card:first-of-type .about__card-bottom .about__card-text:lang(ru) .text__wrap {
     display: none;
   }
+  .about .about__container .about__cards .about__card:first-of-type .about__card-bottom .about__card-text:lang(uk) .text__wrap {
+    display: none;
+  }
   .about .about__container .about__cards .about__card:nth-of-type(3) .about__card-bottom .about__card-text:lang(ru) .text__wrap {
+    display: none;
+  }
+  .about .about__container .about__cards .about__card:nth-of-type(3) .about__card-bottom .about__card-text:lang(uk) .text__wrap {
     display: none;
   }
   .about .about__container .about__cards .about__card:nth-of-type(4) .about__card-bottom .about__card-text .card-text__devider span {
     display: none;
   }
   .about .about__container .about__cards .about__card:nth-of-type(4) .about__card-bottom .about__card-text:lang(ru) span {
+    display: none;
+  }
+  .about .about__container .about__cards .about__card:nth-of-type(4) .about__card-bottom .about__card-text:lang(uk) span {
     display: none;
   }
   footer .footer__container .footer__top .footer__socials .footer__socials-links .footer__socials-link .socials-link__img {
@@ -1538,6 +1589,9 @@ footer .footer__container .footer__bottom .footer__copyright {
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(2) .accordion__content .accordion__text:lang(ru) {
     max-width: 654px;
   }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(2) .accordion__content .accordion__text:lang(uk) {
+    max-width: 646px;
+  }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(3) .accordion__content .accordion__text:lang(ru) {
     max-width: 532px;
   }
@@ -1550,12 +1604,6 @@ footer .footer__container .footer__bottom .footer__copyright {
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(4) .accordion__content .accordion__text:lang(ru) .accordion__text-devider {
     display: inline-block;
   }
-  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(5) .accordion__content .accordion__text {
-    max-width: 476px;
-  }
-  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(5) .accordion__content .accordion__text .accordion__text-devider {
-    display: inline-grid;
-  }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(6) .accordion__content .accordion__text .accordion__text-devider {
     display: inline-block;
   }
@@ -1563,6 +1611,9 @@ footer .footer__container .footer__bottom .footer__copyright {
     max-width: 564px;
   }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:last-of-type .accordion__content .accordion__text:lang(ru) {
+    max-width: 592px;
+  }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:last-of-type .accordion__content .accordion__text:lang(uk) {
     max-width: 592px;
   }
   .faq .faq__container .faq__inner .faq__media .faq__media-img {
@@ -1599,7 +1650,7 @@ footer .footer__container .footer__bottom .footer__copyright {
     max-width: 1200px;
   }
   header .header__container {
-    padding: 10px 0px;
+    padding: 13px 0px;
   }
   header .header__container .header__logo .header__logo-link .header__logo-img {
     width: 140px;
@@ -1753,6 +1804,12 @@ footer .footer__container .footer__bottom .footer__copyright {
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(5) .accordion__content .accordion__text .accordion__text-devider span:lang(ru) {
     display: inline-block;
   }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(5) .accordion__content .accordion__text .accordion__text-devider span:lang(uk) {
+    display: block;
+  }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(5) .accordion__content .accordion__text:lang(uk) {
+    max-width: 632px;
+  }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(6) .accordion__content .accordion__text:lang(ru) {
     max-width: 584px;
   }
@@ -1760,6 +1817,9 @@ footer .footer__container .footer__bottom .footer__copyright {
     max-width: 564px;
   }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:last-of-type .accordion__content .accordion__text:lang(ru) {
+    max-width: 592px;
+  }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:last-of-type .accordion__content .accordion__text:lang(uk) {
     max-width: 592px;
   }
   .faq .faq__container .faq__media .faq__media-img {
@@ -1798,7 +1858,7 @@ footer .footer__container .footer__bottom .footer__copyright {
     max-width: 944px;
   }
   header .header__container {
-    padding: 11px 0px;
+    padding: 12px 0px;
   }
   .hero .hero__container .hero__title {
     font-size: 56px;
@@ -1868,10 +1928,19 @@ footer .footer__container .footer__bottom .footer__copyright {
   .about .about__container .about__cards .about__card:nth-of-type(2) .about__card-bottom .about__card-text:lang(ru) {
     padding-right: initial;
   }
+  .about .about__container .about__cards .about__card:nth-of-type(2) .about__card-bottom .about__card-text:lang(uk) {
+    width: 190px;
+  }
   .about .about__container .about__cards .about__card:nth-of-type(3) .about__card-bottom .about__card-text {
     padding-right: initial;
   }
   .about .about__container .about__cards .about__card:nth-of-type(3) .about__card-bottom .about__card-text:lang(ru) .card-text__devider {
+    display: inline-block;
+  }
+  .about .about__container .about__cards .about__card:nth-of-type(3) .about__card-bottom .about__card-text:lang(uk) {
+    width: 190px;
+  }
+  .about .about__container .about__cards .about__card:nth-of-type(3) .about__card-bottom .about__card-text .card-text__devider:lang(uk) {
     display: inline-block;
   }
   .about .about__container .about__cards .about__card:nth-of-type(4) .about__card-bottom .about__card-text .card-text__devider {
@@ -1935,29 +2004,50 @@ footer .footer__container .footer__bottom .footer__copyright {
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(3) .accordion__content .accordion__text:lang(ru) {
     max-width: 498px;
   }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(3) .accordion__content .accordion__text:lang(uk) {
+    max-width: initial;
+  }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(4) .accordion__content .accordion__text {
     max-width: 478px;
   }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(4) .accordion__content .accordion__text:lang(ru) {
     max-width: 460px;
   }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(4) .accordion__content .accordion__text:lang(uk) {
+    max-width: 546px;
+  }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(5) .accordion__content .accordion__text {
     max-width: 448px;
+  }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(5) .accordion__content .accordion__text:lang(uk) {
+    max-width: initial;
   }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(5) .accordion__content .accordion__text .accordion__text-devider {
     display: inline-block;
   }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(5) .accordion__content .accordion__text .accordion__text-devider:lang(ru) {
+    display: initial;
+  }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(5) .accordion__content .accordion__text .accordion__text-devider:lang(ru) span {
+    display: inline-block;
+  }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(5) .accordion__content .accordion__text .accordion__text-devider:lang(uk) {
+    display: initial;
+  }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(5) .accordion__content .accordion__text .accordion__text-devider:lang(uk) span {
     display: inline-block;
   }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(6) .accordion__content .accordion__text:lang(ru) {
     max-width: 382px;
   }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(6) .accordion__content .accordion__text:lang(uk) {
+    max-width: 528px;
+  }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(7) .accordion__content .accordion__text {
     max-width: 444px;
   }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(7) .accordion__content .accordion__text:lang(ru) {
-    max-width: 500px;
+    max-width: 534px;
   }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:last-of-type .accordion__content .accordion__text {
     max-width: 530px;
@@ -1981,6 +2071,9 @@ footer .footer__container .footer__bottom .footer__copyright {
     padding-right: 50px;
   }
   footer .footer__container .footer__top .footer__socials .footer__socials-text:lang(ru) {
+    padding-right: 24px;
+  }
+  footer .footer__container .footer__top .footer__socials .footer__socials-text:lang(uk) {
     padding-right: 24px;
   }
   footer .footer__container .footer__top .footer__socials .footer__socials-links .footer__socials-link .socials-link__img {
@@ -2028,6 +2121,9 @@ footer .footer__container .footer__bottom .footer__copyright {
   .popup .popup__inner .popup__content .popup__aside .popup__title {
     font-size: 38px;
   }
+  .popup .popup__inner .popup__content .popup__aside .popup__title:lang(uk) {
+    max-width: 246px;
+  }
   .popup .popup__inner .popup__content .popup__aside .popup__features .popup__feature {
     font-size: 13px;
   }
@@ -2044,7 +2140,7 @@ footer .footer__container .footer__bottom .footer__copyright {
     max-width: 688px;
   }
   header .header__container {
-    padding: 11px 0px;
+    padding: 12px 0px;
   }
   .hero .hero__container .hero__title {
     font-size: 52px;
@@ -2079,6 +2175,9 @@ footer .footer__container .footer__bottom .footer__copyright {
   }
   .about .about__container .about__desc .about__desc-inner .about__desc-text:lang(ru) {
     padding: 0px 45px;
+  }
+  .about .about__container .about__desc .about__desc-inner .about__desc-text:lang(uk) {
+    padding: initial;
   }
   .about .about__container .about__desc .about__desc-inner .about__desc-text .desc__wrap {
     font-size: 24px;
@@ -2124,6 +2223,9 @@ footer .footer__container .footer__bottom .footer__copyright {
   .about .about__container .about__cards .about__card:nth-of-type(2) .about__card-bottom .about__card-text:lang(ru) {
     padding-right: initial;
   }
+  .about .about__container .about__cards .about__card:nth-of-type(2) .about__card-bottom .about__card-text:lang(uk) {
+    width: 190px;
+  }
   .about .about__container .about__cards .about__card:nth-of-type(2) .about__card-bottom .about__card-text .card-text__devider {
     display: inline-block;
   }
@@ -2134,6 +2236,12 @@ footer .footer__container .footer__bottom .footer__copyright {
     padding-right: 7px;
   }
   .about .about__container .about__cards .about__card:nth-of-type(3) .about__card-bottom .about__card-text:lang(ru) .card-text__devider {
+    display: inline-block;
+  }
+  .about .about__container .about__cards .about__card:nth-of-type(3) .about__card-bottom .about__card-text:lang(uk) {
+    width: 190px;
+  }
+  .about .about__container .about__cards .about__card:nth-of-type(3) .about__card-bottom .about__card-text:lang(uk) .card-text__devider {
     display: inline-block;
   }
   .about .about__container .about__cards .about__card:nth-of-type(4) {
@@ -2196,16 +2304,22 @@ footer .footer__container .footer__bottom .footer__copyright {
     max-width: 490px;
   }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:first-of-type .accordion__content .accordion__text {
-    max-width: 394px;
+    max-width: initial;
   }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:first-of-type .accordion__content .accordion__text:lang(ru) {
-    max-width: 370px;
+    max-width: 532px;
+  }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:first-of-type .accordion__content .accordion__text:lang(uk) {
+    max-width: 514px;
   }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(2) .accordion__content .accordion__text:lang(ru) {
     max-width: 612px;
   }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(3) .accordion__content .accordion__text:lang(ru) {
     max-width: 498px;
+  }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(3) .accordion__content .accordion__text:lang(uk) {
+    max-width: 534px;
   }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(4) .accordion__content .accordion__text {
     max-width: 552px;
@@ -2225,8 +2339,14 @@ footer .footer__container .footer__bottom .footer__copyright {
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(5) .accordion__content .accordion__text:lang(ru) .accordion__text-devider .text__wrap {
     display: inline-block;
   }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(5) .accordion__content .accordion__text:lang(uk) {
+    max-width: initial;
+  }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(6) .accordion__content .accordion__text:lang(ru) {
     max-width: 548px;
+  }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(6) .accordion__content .accordion__text:lang(uk) {
+    max-width: 528px;
   }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(7) .accordion__content .accordion__text {
     max-width: 568px;
@@ -2257,6 +2377,9 @@ footer .footer__container .footer__bottom .footer__copyright {
     max-width: 172px;
     font-size: 15px;
     padding-right: 13px;
+  }
+  footer .footer__container .footer__top .footer__socials .footer__socials-text:lang(uk) {
+    padding-right: 4px;
   }
   footer .footer__container .footer__top .footer__socials .footer__socials-links .footer__socials-link .socials-link__img {
     width: 46px;
@@ -2314,6 +2437,9 @@ footer .footer__container .footer__bottom .footer__copyright {
   header .header__container .header__nav .header__nav-contact {
     padding: 24px 70px;
   }
+  header .header__container .header__nav .header__nav-contact:lang(uk) {
+    padding: 22px 50px;
+  }
   .hero .hero__container {
     margin: auto;
     place-items: center;
@@ -2330,6 +2456,9 @@ footer .footer__container .footer__bottom .footer__copyright {
   .hero .hero__container .hero__subtitle:lang(ru) {
     max-width: 296px;
   }
+  .hero .hero__container .hero__subtitle:lang(uk) {
+    max-width: 296px;
+  }
   .hero .hero__container .hero__button {
     font-size: 16px;
     max-width: 280px;
@@ -2337,6 +2466,9 @@ footer .footer__container .footer__bottom .footer__copyright {
   }
   .hero .hero__container .hero__button:lang(ru) {
     padding: 22px 51px;
+  }
+  .hero .hero__container .hero__button:lang(uk) {
+    padding: 22px 50px;
   }
   .about .about__container {
     flex-wrap: wrap;
@@ -2364,7 +2496,6 @@ footer .footer__container .footer__bottom .footer__copyright {
   }
   .about .about__container .about__cards .about__card {
     max-width: 190px;
-    gap: 41px;
   }
   .about .about__container .about__cards .about__card .about__card-top {
     flex-wrap: wrap;
@@ -2382,6 +2513,9 @@ footer .footer__container .footer__bottom .footer__copyright {
     max-width: 112px;
   }
   .about .about__container .about__cards .about__card .about__card-top .about__card-title:lang(ru) {
+    max-width: 115px;
+  }
+  .about .about__container .about__cards .about__card .about__card-top .about__card-title:lang(uk) {
     max-width: 115px;
   }
   .about .about__container .about__cards .about__card .about__card-bottom .about__card-text {
@@ -2411,6 +2545,12 @@ footer .footer__container .footer__bottom .footer__copyright {
   .about .about__container .about__cards .about__card:nth-of-type(5) .about__card-bottom .about__card-text:lang(ru) {
     padding-right: initial;
   }
+  .about .about__container .about__cards .about__card:last-of-type .about__card-bottom .about__card-text:lang(ru) {
+    width: 167px;
+  }
+  .about .about__container .about__cards .about__card:last-of-type .about__card-bottom .about__card-text:lang(uk) {
+    width: 162px;
+  }
   .services .services__container .services__title {
     font-size: 30px;
   }
@@ -2438,6 +2578,9 @@ footer .footer__container .footer__bottom .footer__copyright {
   .services .services__container .services__inner .service__card:nth-of-type(2):lang(ru) .service__card-list {
     margin-bottom: 61px;
   }
+  .services .services__container .services__inner .service__card:nth-of-type(2):lang(uk) .service__card-list {
+    margin-bottom: 43px;
+  }
   .faq .faq__container .faq__title {
     font-size: 30px;
     text-align: center;
@@ -2461,11 +2604,17 @@ footer .footer__container .footer__bottom .footer__copyright {
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:first-of-type .accordion__content .accordion__text:lang(ru) {
     max-width: 278px;
   }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:first-of-type .accordion__content .accordion__text:lang(uk) {
+    max-width: 330px;
+  }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(2) .accordion__content .accordion__text {
     max-width: 300px;
   }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(2) .accordion__content .accordion__text:lang(ru) {
     max-width: 306px;
+  }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(2) .accordion__content .accordion__text:lang(uk) {
+    width: 351px;
   }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(3) .accordion__content .accordion__text {
     max-width: 292px;
@@ -2473,8 +2622,14 @@ footer .footer__container .footer__bottom .footer__copyright {
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(3) .accordion__content .accordion__text:lang(ru) {
     max-width: 304px;
   }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(3) .accordion__content .accordion__text:lang(uk) {
+    max-width: initial;
+  }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(4) .accordion__content .accordion__text:lang(ru) {
     max-width: 302px;
+  }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(4) .accordion__content .accordion__text:lang(uk) {
+    max-width: 272px;
   }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(5) .accordion__content .accordion__text .accordion__text-devider span {
     display: inline-block;
@@ -2488,6 +2643,10 @@ footer .footer__container .footer__bottom .footer__copyright {
   }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(6) .accordion__content .accordion__text .accordion__text-devider span {
     display: inline-block;
+  }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(6) .accordion__content .accordion__text:lang(uk) {
+    max-width: initial;
+    width: 351px;
   }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(7) .accordion__content .accordion__text:lang(ru) {
     max-width: 338px;
@@ -2518,6 +2677,9 @@ footer .footer__container .footer__bottom .footer__copyright {
     padding-right: initial;
   }
   footer .footer__container .footer__top .footer__socials .footer__socials-text:lang(ru) {
+    max-width: 168px;
+  }
+  footer .footer__container .footer__top .footer__socials .footer__socials-text:lang(uk) {
     max-width: 168px;
   }
   footer .footer__container .footer__top .footer__socials .footer__socials-links {
@@ -2572,7 +2734,10 @@ footer .footer__container .footer__bottom .footer__copyright {
     max-width: 247px;
   }
   .popup .popup__inner .popup__content .popup__body #lead-form .form__card-note:lang(ru) {
-    max-width: 262px;
+    max-width: 276px;
+  }
+  .popup .popup__inner .popup__content .popup__body #lead-form .form__card-note:lang(uk) {
+    max-width: 276px;
   }
 }
 @media (390px <= width < 440px) {
@@ -2602,6 +2767,9 @@ footer .footer__container .footer__bottom .footer__copyright {
   header .header__container .header__nav .header__nav-contact:lang(ru) {
     padding: 22px 54px;
   }
+  header .header__container .header__nav .header__nav-contact:lang(uk) {
+    padding: 22px 53px;
+  }
   .hero .hero__container {
     place-items: center;
   }
@@ -2617,12 +2785,18 @@ footer .footer__container .footer__bottom .footer__copyright {
   .hero .hero__container .hero__subtitle:lang(ru) {
     max-width: 296px;
   }
+  .hero .hero__container .hero__subtitle:lang(uk) {
+    max-width: 276px;
+  }
   .hero .hero__container .hero__button {
     font-size: 15px;
     padding: 22px 73px;
   }
   .hero .hero__container .hero__button:lang(ru) {
     padding: 22px 54px;
+  }
+  .hero .hero__container .hero__button:lang(uk) {
+    padding: 22px 53px;
   }
   .about .about__container {
     flex-wrap: wrap;
@@ -2647,7 +2821,6 @@ footer .footer__container .footer__bottom .footer__copyright {
   }
   .about .about__container .about__cards .about__card {
     max-width: 168px;
-    gap: 34px;
   }
   .about .about__container .about__cards .about__card .about__card-top {
     flex-wrap: wrap;
@@ -2673,6 +2846,12 @@ footer .footer__container .footer__bottom .footer__copyright {
   .about .about__container .about__cards .about__card:nth-of-type(3) .about__card-bottom .about__card-text {
     padding-right: initial;
   }
+  .about .about__container .about__cards .about__card:nth-of-type(3) .about__card-bottom .about__card-text .card-text__devider:lang(ru) {
+    display: inline-block;
+  }
+  .about .about__container .about__cards .about__card:nth-of-type(3) .about__card-bottom .about__card-text .card-text__devider:lang(uk) {
+    display: inline-block;
+  }
   .about .about__container .about__cards .about__card:nth-of-type(4) .about__card-bottom .about__card-text .card-text__devider {
     display: initial;
     padding-right: initial;
@@ -2687,6 +2866,9 @@ footer .footer__container .footer__bottom .footer__copyright {
   }
   .about .about__container .about__cards .about__card:nth-of-type(5) .about__card-bottom .about__card-text:lang(ru) {
     padding-right: initial;
+  }
+  .about .about__container .about__cards .about__card:last-of-type .about__card-bottom .about__card-text:lang(uk) {
+    width: 142px;
   }
   .services .services__container .services__title {
     font-size: 28px;
@@ -2716,8 +2898,14 @@ footer .footer__container .footer__bottom .footer__copyright {
   .services .services__container .services__inner .service__card:first-of-type .service__card-list:lang(ru) {
     margin-bottom: 48px;
   }
+  .services .services__container .services__inner .service__card:first-of-type .service__card-list:lang(uk) {
+    margin-bottom: 60px;
+  }
   .services .services__container .services__inner .service__card:nth-of-type(2) .service__card-list {
     margin-bottom: 80px;
+  }
+  .services .services__container .services__inner .service__card:nth-of-type(2) .service__card-list:lang(uk) {
+    margin-bottom: 76px;
   }
   .faq .faq__container .faq__title {
     font-size: 28px;
@@ -2750,11 +2938,17 @@ footer .footer__container .footer__bottom .footer__copyright {
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(5) .accordion__content .accordion__text .accordion__text-devider .text__wrap {
     display: inline-block;
   }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(5) .accordion__content .accordion__text:lang(uk) {
+    max-width: initial;
+  }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(6) .accordion__content .accordion__text .accordion__text-devider span {
     display: inline-block;
   }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(7) .accordion__content .accordion__text .accordion__text-devider:lang(ru) {
     display: inline-block;
+  }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(7) .accordion__content .accordion__text:lang(uk) {
+    max-width: 258px;
   }
   .faq .faq__container .faq__media .faq__media-img {
     display: none;
@@ -2782,6 +2976,9 @@ footer .footer__container .footer__bottom .footer__copyright {
   }
   footer .footer__container .footer__top .footer__socials .footer__socials-text:lang(ru) {
     max-width: 172px;
+  }
+  footer .footer__container .footer__top .footer__socials .footer__socials-text:lang(uk) {
+    max-width: 168px;
   }
   footer .footer__container .footer__top .footer__socials .footer__socials-links {
     margin-left: initial;
@@ -2862,6 +3059,9 @@ footer .footer__container .footer__bottom .footer__copyright {
   header .header__container .header__nav .header__nav-contact:lang(ru) {
     padding: 22px 45px;
   }
+  header .header__container .header__nav .header__nav-contact:lang(uk) {
+    padding: 22px 44px;
+  }
   .hero .hero__container {
     place-items: center;
   }
@@ -2877,12 +3077,18 @@ footer .footer__container .footer__bottom .footer__copyright {
   .hero .hero__container .hero__subtitle:lang(ru) {
     max-width: 276px;
   }
+  .hero .hero__container .hero__subtitle:lang(uk) {
+    max-width: 258px;
+  }
   .hero .hero__container .hero__button {
     font-size: 15px;
     padding: 22px 68px;
   }
   .hero .hero__container .hero__button:lang(ru) {
     padding: 22px 45px;
+  }
+  .hero .hero__container .hero__button:lang(uk) {
+    padding: 22px 44px;
   }
   .about .about__container {
     flex-wrap: wrap;
@@ -2907,7 +3113,6 @@ footer .footer__container .footer__bottom .footer__copyright {
   }
   .about .about__container .about__cards .about__card {
     max-width: 160px;
-    gap: 34px;
   }
   .about .about__container .about__cards .about__card .about__card-top {
     flex-wrap: wrap;
@@ -2933,8 +3138,14 @@ footer .footer__container .footer__bottom .footer__copyright {
   .about .about__container .about__cards .about__card:nth-of-type(2) .about__card-bottom .about__card-text:lang(ru) {
     padding-right: initial;
   }
+  .about .about__container .about__cards .about__card:nth-of-type(2) .about__card-bottom .about__card-text:lang(uk) {
+    width: 132px;
+  }
   .about .about__container .about__cards .about__card:nth-of-type(3) .about__card-bottom .about__card-text {
     padding-right: initial;
+  }
+  .about .about__container .about__cards .about__card:nth-of-type(3) .about__card-bottom .about__card-text:lang(uk) .card-text__devider {
+    display: inline-block;
   }
   .about .about__container .about__cards .about__card:nth-of-type(4) .about__card-bottom .about__card-text .card-text__devider {
     display: initial;
@@ -2947,6 +3158,12 @@ footer .footer__container .footer__bottom .footer__copyright {
   }
   .about .about__container .about__cards .about__card:nth-of-type(5) .about__card-bottom .about__card-text {
     padding-right: initial;
+  }
+  .about .about__container .about__cards .about__card:nth-of-type(5) .about__card-bottom .about__card-text:lang(uk) {
+    width: 131px;
+  }
+  .about .about__container .about__cards .about__card:last-of-type .about__card-bottom .about__card-text:lang(uk) {
+    width: 131px;
   }
   .services .services__container .services__title {
     font-size: 26px;
@@ -2982,6 +3199,9 @@ footer .footer__container .footer__bottom .footer__copyright {
   .services .services__container .services__inner .service__card:nth-of-type(2) .service__card-list:lang(ru) {
     margin-bottom: 74px;
   }
+  .services .services__container .services__inner .service__card:nth-of-type(2) .service__card-list:lang(uk) {
+    margin-bottom: 106px;
+  }
   .faq .faq__container .faq__title {
     font-size: 28px;
   }
@@ -3012,6 +3232,9 @@ footer .footer__container .footer__bottom .footer__copyright {
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(3) .accordion__content .accordion__text {
     max-width: 236px;
   }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(3) .accordion__content .accordion__text:lang(uk) {
+    max-width: initial;
+  }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(5) .accordion__content .accordion__text {
     max-width: 268px;
   }
@@ -3023,6 +3246,9 @@ footer .footer__container .footer__bottom .footer__copyright {
   }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(6) .accordion__content .accordion__text .accordion__text-devider span {
     display: inline-block;
+  }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(7) .accordion__content .accordion__text:lang(uk) {
+    max-width: 240px;
   }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:last-of-type .accordion__content .accordion__text .accordion__text-devider span {
     display: inline-block;
@@ -3053,6 +3279,9 @@ footer .footer__container .footer__bottom .footer__copyright {
   }
   footer .footer__container .footer__top .footer__socials .footer__socials-text:lang(ru) {
     max-width: 172px;
+  }
+  footer .footer__container .footer__top .footer__socials .footer__socials-text:lang(uk) {
+    max-width: 168px;
   }
   footer .footer__container .footer__top .footer__socials .footer__socials-links {
     margin-left: initial;
@@ -3133,6 +3362,9 @@ footer .footer__container .footer__bottom .footer__copyright {
   header .header__container .header__nav .header__nav-contact:lang(ru) {
     padding: 22px 47px;
   }
+  header .header__container .header__nav .header__nav-contact:lang(uk) {
+    padding: 22px 46px;
+  }
   .hero .hero__container {
     place-items: center;
   }
@@ -3148,12 +3380,18 @@ footer .footer__container .footer__bottom .footer__copyright {
   .hero .hero__container .hero__subtitle:lang(ru) {
     max-width: 276px;
   }
+  .hero .hero__container .hero__subtitle:lang(uk) {
+    max-width: 258px;
+  }
   .hero .hero__container .hero__button {
     font-size: 14px;
     padding: 22px 64px;
   }
   .hero .hero__container .hero__button:lang(ru) {
     padding: 22px 47px;
+  }
+  .hero .hero__container .hero__button:lang(uk) {
+    padding: 22px 46px;
   }
   .about .about__container {
     flex-wrap: wrap;
@@ -3178,7 +3416,6 @@ footer .footer__container .footer__bottom .footer__copyright {
   }
   .about .about__container .about__cards .about__card {
     max-width: 153px;
-    gap: 18px;
   }
   .about .about__container .about__cards .about__card .about__card-top {
     flex-wrap: wrap;
@@ -3211,6 +3448,9 @@ footer .footer__container .footer__bottom .footer__copyright {
   .about .about__container .about__cards .about__card:nth-of-type(3) .about__card-bottom .about__card-text {
     padding-right: initial;
   }
+  .about .about__container .about__cards .about__card:nth-of-type(3) .about__card-bottom .about__card-text .card-text__devider:lang(uk) {
+    display: inline-block;
+  }
   .about .about__container .about__cards .about__card:nth-of-type(4) .about__card-bottom .about__card-text .card-text__devider {
     display: initial;
     padding-right: initial;
@@ -3222,6 +3462,12 @@ footer .footer__container .footer__bottom .footer__copyright {
   }
   .about .about__container .about__cards .about__card:nth-of-type(5) .about__card-bottom .about__card-text {
     padding-right: initial;
+  }
+  .about .about__container .about__cards .about__card:nth-of-type(5) .about__card-bottom .about__card-text:lang(ru) {
+    padding-right: initial;
+  }
+  .about .about__container .about__cards .about__card:last-of-type .about__card-bottom .about__card-text:lang(ru) {
+    width: 125px;
   }
   .services .services__container .services__title {
     font-size: 26px;
@@ -3265,6 +3511,9 @@ footer .footer__container .footer__bottom .footer__copyright {
   .services .services__container .services__inner .service__card:nth-of-type(2) .service__card-list:lang(ru) {
     margin-bottom: 74px;
   }
+  .services .services__container .services__inner .service__card:nth-of-type(2) .service__card-list:lang(uk) {
+    margin-bottom: 124px;
+  }
   .faq .faq__container .faq__title {
     font-size: 26px;
   }
@@ -3289,6 +3538,9 @@ footer .footer__container .footer__bottom .footer__copyright {
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(2) .accordion__content .accordion__text:lang(ru) {
     max-width: 256px;
   }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(3) .accordion__content .accordion__text:lang(uk) {
+    width: initial;
+  }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(5) .accordion__content .accordion__text {
     width: 250px;
   }
@@ -3299,15 +3551,24 @@ footer .footer__container .footer__bottom .footer__copyright {
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(5) .accordion__content .accordion__text .accordion__text-devider span:lang(ru) {
     width: 256px;
   }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(5) .accordion__content .accordion__text:lang(uk) {
+    width: initial;
+  }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(6) .accordion__content .accordion__text .accordion__text-devider span:lang(ru) {
     display: inline-block;
     width: 188px;
+  }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:nth-of-type(7) .accordion__content .accordion__text:lang(uk) {
+    max-width: 240px;
   }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:last-of-type .accordion__content .accordion__text .accordion__text-devider span {
     display: inline-block;
   }
   .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:last-of-type .accordion__content .accordion__text {
     width: 263px;
+  }
+  .faq .faq__container .faq__inner .faq__content .faq__accordion .accordion__item:last-of-type .accordion__content .accordion__text:lang(uk) {
+    width: initial;
   }
   .faq .faq__container .faq__media .faq__media-img {
     display: none;
@@ -3335,6 +3596,9 @@ footer .footer__container .footer__bottom .footer__copyright {
   }
   footer .footer__container .footer__top .footer__socials .footer__socials-text:lang(ru) {
     max-width: 172px;
+  }
+  footer .footer__container .footer__top .footer__socials .footer__socials-text:lang(uk) {
+    max-width: 168px;
   }
   footer .footer__container .footer__top .footer__socials .footer__socials-links {
     margin-left: initial;
@@ -3393,22 +3657,18 @@ footer .footer__container .footer__bottom .footer__copyright {
 }
 /*
 
--uk страница
-	1920 header hero about services faq footer popup
-	1440 header hero about services faq footer popup
-	1280 header hero about services faq footer popup
-	1024 header hero about services faq footer popup
-	768 header hero about services faq footer popup
-	440 header hero about services faq footer popup
-	390 header hero about services faq footer popup
-	375 header hero about services faq footer popup
-	360 header hero about services faq footer popup
-
 -еще раз чекнуть переносы faq (ru + en + uk)
-	+проверить переносы form-note
+	1920 1440 1280 1024 744 440 390 375 360
 	+проверить переносы accordion__title (ru + en + uk)
+		1920 1440 1280 1024 744 440 390 375 360
+	+проверить переносы form-note
+		1920 1440 1280 1024 744 440 390 375 360
 	+gap между top и bottom в карточках about (ru + en + uk)
-	+проверить отступ между button и ul в карточках services (ru + en + uk)
+		1920 1440 1280 1024 744 440 390 375 360
+	+проверить отступ между button и ul в карточках  services (ru + en + uk) (снизить padding боковой до 30px начиная от 1024???? + увеличить нижний)
+		1920 1440 1280 1024 744 440 390 375 360
+	проверить размеры кнопки hero -> burger (ru + en + uk)
+		1024 744 440 390 375 360
 
 -проверить переносы текстов chrome + firefox :^)
 
@@ -3420,10 +3680,12 @@ footer .footer__container .footer__bottom .footer__copyright {
 
 -безопасность forms -> sheets
 
+-отключить автоперевод и перевод через плагины в браузерах (?)
+
 -сборка проекта:
 	+файлы
 	+html
 	+css
-	+сео
+	+sео
 
 *//*# sourceMappingURL=style.css.map */
