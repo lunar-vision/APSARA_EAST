@@ -16,6 +16,10 @@ $not-white: #fcfcfc;
 	text-decoration: none;
 }
 
+.notranslate {
+	translate: none !important;
+}
+
 html {
 	scroll-behavior: smooth;
 	-webkit-overflow-scrolling: touch;
@@ -810,7 +814,7 @@ header {
 				box-shadow: inset 0 0 0 1px $text-color;
 				border-radius: 15px;
 				width: 540px;
-				padding: 55px 35px 45px;
+				padding: 55px 35px 40px;
 				background-color: $not-white;
 				.service__card-badge {
 					font-family: "Montserrat";
@@ -899,8 +903,14 @@ header {
 					background-color: $not-white;
 					text-align: center;
 					border-radius: 25px;
-					padding: 23px 136px;
+					padding: 23px 137px;
 					place-self: center;
+					&:lang(ru) {
+						padding: 23px 116px;
+					}
+					&:lang(uk) {
+						padding: 23px 124px;
+					}
 				}
 				&.service__card--invert {
 					background-color: $sec-color--light;
@@ -1425,12 +1435,12 @@ footer {
 					border-radius: 15px;
 					border: none;
 					margin-bottom: 40px;
-					padding: 24px 92px;
+					padding: 23px 92px;
 					&:lang(ru) {
-						padding: 24px 51px;
+						padding: 23px 51px;
 					}
 					&:lang(uk) {
-						padding: 24px 50px;
+						padding: 23px 50px;
 					}
 				}
 				.header__nav-socials {
@@ -1910,6 +1920,14 @@ footer {
 					.service__card-list {
 						margin-bottom: 74px;
 					}
+					.service__button {
+						&:lang(ru) {
+							padding: 23px 115px;
+						}
+						&:lang(uk) {
+							padding: 23px 124px;
+						}
+					}
 				}
 			}
 		}
@@ -2223,6 +2241,12 @@ footer {
 					.service__button {
 						font-size: 28px;
 						padding: 21px 126px;
+						&:lang(ru) {
+							padding: 21px 105px;
+						}
+						&:lang(uk) {
+							padding: 21px 114px;
+						}
 					}
 				}
 			}
@@ -2550,13 +2574,29 @@ footer {
 					width: 442px;
 					.service__card-list {
 						margin-bottom: 61px;
+						&:lang(uk) {
+							margin-bottom: 40px;
+						}
 					}
 					.service__card-title {
 						font-size: 37px;
 					}
 					.service__button {
-						padding: 21px 111px;
+						padding: 21px 115px;
 						font-size: 26px;
+						&:lang(ru) {
+							padding: 21px 96px;
+						}
+						&:lang(uk) {
+							padding: 21px 104px;
+						}
+					}
+					&:first-of-type {
+						.service__card-list {
+							&:lang(uk) {
+								margin-bottom: 60px;
+							}
+						}
 					}
 				}
 			}
@@ -2971,13 +3011,22 @@ footer {
 					width: 520px;
 					.service__card-list {
 						margin-bottom: 71px;
+						&:lang(ru) {
+							margin-bottom: 80px;
+						}
 					}
 					.service__card-title {
 						font-size: 37px;
 					}
 					.service__button {
-						padding: 24px 130px;
+						padding: 24px 129px;
 						font-size: 26px;
+						&:lang(ru) {
+							padding: 24px 110px;
+						}
+						&:lang(uk) {
+							padding: 24px 118px;
+						}
 					}
 				}
 			}
@@ -3223,9 +3272,12 @@ footer {
 			}
 			.header__nav {
 				.header__nav-contact {
-					padding: 24px 70px;
+					padding: 24px 90px;
 					&:lang(uk) {
 						padding: 22px 50px;
+					}
+					&:lang(ru) {
+						padding: 22px 51px;
 					}
 				}
 			}
@@ -3254,7 +3306,7 @@ footer {
 			.hero__button {
 				font-size: 16px;
 				max-width: 280px;
-				padding: 22px 70px;
+				padding: 22px 90px;
 				&:lang(ru) {
 					padding: 22px 51px;
 				}
@@ -3400,14 +3452,23 @@ footer {
 					width: 400px;
 					.service__card-list {
 						margin-bottom: 61px;
+						&:lang(ru) {
+							margin-bottom: 51px;
+						}
 					}
 					.service__card-title {
 						font-size: 36px;
 					}
 					.service__button {
-						padding: 23px 104px;
+						padding: 23px 108px;
 						font-size: 22px;
 						border-radius: 22px;
+						&:lang(ru) {
+							padding: 23px 92px;
+						}
+						&:lang(uk) {
+							padding: 23px 99px;
+						}
 					}
 					&:nth-of-type(2) {
 						.service__card-list {
@@ -3415,7 +3476,7 @@ footer {
 						}
 						&:lang(ru) {
 							.service__card-list {
-								margin-bottom: 61px;
+								margin-bottom: 51px;
 							}
 						}
 						&:lang(uk) {
@@ -3690,7 +3751,7 @@ footer {
 				}
 				.header__nav-contact {
 					font-size: 15px;
-					padding: 22px 70px;
+					padding: 22px 88px;
 					&:lang(ru) {
 						padding: 22px 54px;
 					}
@@ -3722,7 +3783,7 @@ footer {
 			}
 			.hero__button {
 				font-size: 15px;
-				padding: 22px 73px;
+				padding: 22px 88px;
 				&:lang(ru) {
 					padding: 22px 54px;
 				}
@@ -3875,18 +3936,18 @@ footer {
 					&:first-of-type {
 						.service__card-list {
 							&:lang(ru) {
-								margin-bottom: 48px;
+								margin-bottom: 38px;
 							}
 							&:lang(uk) {
-								margin-bottom: 60px;
+								margin-bottom: 45px;
 							}
 						}
 					}
 					&:nth-of-type(2) {
 						.service__card-list {
-							margin-bottom: 80px;
+							margin-bottom: 70px;
 							&:lang(uk) {
-								margin-bottom: 76px;
+								margin-bottom: 61px;
 							}
 						}
 					}
@@ -4115,7 +4176,7 @@ footer {
 				}
 				.header__nav-contact {
 					font-size: 15px;
-					padding: 22px 68px;
+					padding: 22px 83px;
 					&:lang(ru) {
 						padding: 22px 45px;
 					}
@@ -4147,7 +4208,7 @@ footer {
 			}
 			.hero__button {
 				font-size: 15px;
-				padding: 22px 68px;
+				padding: 22px 83px;
 				&:lang(ru) {
 					padding: 22px 45px;
 				}
@@ -4283,9 +4344,15 @@ footer {
 				flex-wrap: wrap;
 				.service__card {
 					width: 335px;
-					padding-bottom: 30px;
+					padding: 55px 30px 30px;
 					.service__card-list {
 						margin-bottom: 42px;
+						&:lang(ru) {
+							margin-bottom: 30px;
+						}
+						&:lang(uk) {
+							margin-bottom: 30px;
+						}
 						.service__card-item {
 							font-size: 15px;
 						}
@@ -4297,18 +4364,24 @@ footer {
 						font-size: 13px;
 					}
 					.service__button {
-						padding: 19px 78px;
+						padding: 19px 93px;
 						font-size: 22px;
 						border-radius: 22px;
+						&:lang(ru) {
+							padding: 19px 77px;
+						}
+						&:lang(uk) {
+							padding: 19px 84px;
+						}
 					}
 					&:nth-of-type(2) {
 						.service__card-list {
 							margin-bottom: 90px;
 							&:lang(ru) {
-								margin-bottom: 74px;
+								margin-bottom: 62px;
 							}
 							&:lang(uk) {
-								margin-bottom: 106px;
+								margin-bottom: 62px;
 							}
 						}
 					}
@@ -4553,7 +4626,7 @@ footer {
 				}
 				.header__nav-contact {
 					font-size: 14px;
-					padding: 22px 64px;
+					padding: 22px 83px;
 					&:lang(ru) {
 						padding: 22px 47px;
 					}
@@ -4585,7 +4658,7 @@ footer {
 			}
 			.hero__button {
 				font-size: 14px;
-				padding: 22px 64px;
+				padding: 22px 83px;
 				&:lang(ru) {
 					padding: 22px 47px;
 				}
@@ -4722,8 +4795,7 @@ footer {
 				flex-wrap: wrap;
 				.service__card {
 					width: 320px;
-					padding-bottom: 30px;
-
+					padding: 55px 30px 30px;
 					.service__card-title {
 						font-size: 36px;
 					}
@@ -4731,7 +4803,7 @@ footer {
 						font-size: 13px;
 					}
 					.service__card-list {
-						margin-bottom: 42px;
+						margin-bottom: 30px;
 						.service__card-item {
 							font-size: 14px;
 							&::before {
@@ -4747,18 +4819,24 @@ footer {
 						}
 					}
 					.service__button {
-						padding: 18px 74px;
+						padding: 18px 96px;
 						font-size: 21px;
 						border-radius: 21px;
+						&:lang(ru) {
+							padding: 18px 80px;
+						}
+						&:lang(uk) {
+							padding: 18px 86px;
+						}
 					}
 					&:nth-of-type(2) {
 						.service__card-list {
-							margin-bottom: 70px;
+							margin-bottom: 77px;
 							&:lang(ru) {
-								margin-bottom: 74px;
+								margin-bottom: 61px;
 							}
 							&:lang(uk) {
-								margin-bottom: 124px;
+								margin-bottom: 60px;
 							}
 						}
 					}
@@ -4992,23 +5070,15 @@ footer {
 	+проверить переносы form-note
 		1920 1440 1280 1024 744 440 390 375 360
 	+gap между top и bottom в карточках about (ru + en + uk)
-		1920 1440 1280 1024 744 440 390 375 360
-	+проверить отступ между button и ul в карточках  services (ru + en + uk) (снизить padding боковой до 30px начиная от 1024???? + увеличить нижний)
-		1920 1440 1280 1024 744 440 390 375 360
-	проверить размеры кнопки hero -> burger (ru + en + uk)
-		1024 744 440 390 375 360
+		1920 1440 1280 1024 744 440 390 375 360	
 
 -проверить переносы текстов chrome + firefox :^)
 
 -придумать hover эффекты
 
--ускорить закрытие выбора страны и пакета в form
-
 -убрать костыли margin-bottom на карточка services (?)
 
 -безопасность forms -> sheets
-
--отключить автоперевод и перевод через плагины в браузерах (?)
 
 -сборка проекта:
 	+файлы

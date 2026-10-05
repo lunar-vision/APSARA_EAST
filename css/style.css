@@ -745,7 +745,7 @@ header .header__container .header__actions .header__contact-btn, header .header_
   box-shadow: inset 0 0 0 1px #9a9a9a;
   border-radius: 15px;
   width: 540px;
-  padding: 55px 35px 45px;
+  padding: 55px 35px 40px;
   background-color: #fcfcfc;
 }
 .services .services__container .services__inner .service__card .service__card-badge {
@@ -843,8 +843,14 @@ header .header__container .header__actions .header__contact-btn, header .header_
   background-color: #fcfcfc;
   text-align: center;
   border-radius: 25px;
-  padding: 23px 136px;
+  padding: 23px 137px;
   place-self: center;
+}
+.services .services__container .services__inner .service__card .service__button:lang(ru) {
+  padding: 23px 116px;
+}
+.services .services__container .services__inner .service__card .service__button:lang(uk) {
+  padding: 23px 124px;
 }
 .services .services__container .services__inner .service__card.service__card--invert {
   background-color: #0f1b2e;
@@ -1297,13 +1303,13 @@ footer .footer__container .footer__bottom .footer__copyright {
     border-radius: 15px;
     border: none;
     margin-bottom: 40px;
-    padding: 24px 92px;
+    padding: 23px 92px;
   }
   header .header__container .header__nav .header__nav-contact:lang(ru) {
-    padding: 24px 51px;
+    padding: 23px 51px;
   }
   header .header__container .header__nav .header__nav-contact:lang(uk) {
-    padding: 24px 50px;
+    padding: 23px 50px;
   }
   header .header__container .header__nav .header__nav-socials .header__nav-media .nav-media__img {
     border: 1px solid #e8a93d;
@@ -1573,6 +1579,12 @@ footer .footer__container .footer__bottom .footer__copyright {
   .services .services__container .services__inner .service__card .service__card-list {
     margin-bottom: 74px;
   }
+  .services .services__container .services__inner .service__card .service__button:lang(ru) {
+    padding: 23px 115px;
+  }
+  .services .services__container .services__inner .service__card .service__button:lang(uk) {
+    padding: 23px 124px;
+  }
   .faq .faq__container .faq__title {
     font-size: 33px;
   }
@@ -1765,6 +1777,12 @@ footer .footer__container .footer__bottom .footer__copyright {
   .services .services__container .services__inner .service__card .service__button {
     font-size: 28px;
     padding: 21px 126px;
+  }
+  .services .services__container .services__inner .service__card .service__button:lang(ru) {
+    padding: 21px 105px;
+  }
+  .services .services__container .services__inner .service__card .service__button:lang(uk) {
+    padding: 21px 114px;
   }
   .faq .faq__container .faq__title {
     font-size: 32px;
@@ -1967,12 +1985,24 @@ footer .footer__container .footer__bottom .footer__copyright {
   .services .services__container .services__inner .service__card .service__card-list {
     margin-bottom: 61px;
   }
+  .services .services__container .services__inner .service__card .service__card-list:lang(uk) {
+    margin-bottom: 40px;
+  }
   .services .services__container .services__inner .service__card .service__card-title {
     font-size: 37px;
   }
   .services .services__container .services__inner .service__card .service__button {
-    padding: 21px 111px;
+    padding: 21px 115px;
     font-size: 26px;
+  }
+  .services .services__container .services__inner .service__card .service__button:lang(ru) {
+    padding: 21px 96px;
+  }
+  .services .services__container .services__inner .service__card .service__button:lang(uk) {
+    padding: 21px 104px;
+  }
+  .services .services__container .services__inner .service__card:first-of-type .service__card-list:lang(uk) {
+    margin-bottom: 60px;
   }
   .faq .faq__container .faq__title {
     font-size: 32px;
@@ -2278,12 +2308,21 @@ footer .footer__container .footer__bottom .footer__copyright {
   .services .services__container .services__inner .service__card .service__card-list {
     margin-bottom: 71px;
   }
+  .services .services__container .services__inner .service__card .service__card-list:lang(ru) {
+    margin-bottom: 80px;
+  }
   .services .services__container .services__inner .service__card .service__card-title {
     font-size: 37px;
   }
   .services .services__container .services__inner .service__card .service__button {
-    padding: 24px 130px;
+    padding: 24px 129px;
     font-size: 26px;
+  }
+  .services .services__container .services__inner .service__card .service__button:lang(ru) {
+    padding: 24px 110px;
+  }
+  .services .services__container .services__inner .service__card .service__button:lang(uk) {
+    padding: 24px 118px;
   }
   .faq .faq__container .faq__title {
     font-size: 31px;
@@ -2435,10 +2474,13 @@ footer .footer__container .footer__bottom .footer__copyright {
     height: 45px;
   }
   header .header__container .header__nav .header__nav-contact {
-    padding: 24px 70px;
+    padding: 24px 90px;
   }
   header .header__container .header__nav .header__nav-contact:lang(uk) {
     padding: 22px 50px;
+  }
+  header .header__container .header__nav .header__nav-contact:lang(ru) {
+    padding: 22px 51px;
   }
   .hero .hero__container {
     margin: auto;
@@ -2462,7 +2504,7 @@ footer .footer__container .footer__bottom .footer__copyright {
   .hero .hero__container .hero__button {
     font-size: 16px;
     max-width: 280px;
-    padding: 22px 70px;
+    padding: 22px 90px;
   }
   .hero .hero__container .hero__button:lang(ru) {
     padding: 22px 51px;
@@ -2564,19 +2606,28 @@ footer .footer__container .footer__bottom .footer__copyright {
   .services .services__container .services__inner .service__card .service__card-list {
     margin-bottom: 61px;
   }
+  .services .services__container .services__inner .service__card .service__card-list:lang(ru) {
+    margin-bottom: 51px;
+  }
   .services .services__container .services__inner .service__card .service__card-title {
     font-size: 36px;
   }
   .services .services__container .services__inner .service__card .service__button {
-    padding: 23px 104px;
+    padding: 23px 108px;
     font-size: 22px;
     border-radius: 22px;
+  }
+  .services .services__container .services__inner .service__card .service__button:lang(ru) {
+    padding: 23px 92px;
+  }
+  .services .services__container .services__inner .service__card .service__button:lang(uk) {
+    padding: 23px 99px;
   }
   .services .services__container .services__inner .service__card:nth-of-type(2) .service__card-list {
     margin-bottom: 79px;
   }
   .services .services__container .services__inner .service__card:nth-of-type(2):lang(ru) .service__card-list {
-    margin-bottom: 61px;
+    margin-bottom: 51px;
   }
   .services .services__container .services__inner .service__card:nth-of-type(2):lang(uk) .service__card-list {
     margin-bottom: 43px;
@@ -2762,7 +2813,7 @@ footer .footer__container .footer__bottom .footer__copyright {
   }
   header .header__container .header__nav .header__nav-contact {
     font-size: 15px;
-    padding: 22px 70px;
+    padding: 22px 88px;
   }
   header .header__container .header__nav .header__nav-contact:lang(ru) {
     padding: 22px 54px;
@@ -2790,7 +2841,7 @@ footer .footer__container .footer__bottom .footer__copyright {
   }
   .hero .hero__container .hero__button {
     font-size: 15px;
-    padding: 22px 73px;
+    padding: 22px 88px;
   }
   .hero .hero__container .hero__button:lang(ru) {
     padding: 22px 54px;
@@ -2896,16 +2947,16 @@ footer .footer__container .footer__bottom .footer__copyright {
     border-radius: 22px;
   }
   .services .services__container .services__inner .service__card:first-of-type .service__card-list:lang(ru) {
-    margin-bottom: 48px;
+    margin-bottom: 38px;
   }
   .services .services__container .services__inner .service__card:first-of-type .service__card-list:lang(uk) {
-    margin-bottom: 60px;
+    margin-bottom: 45px;
   }
   .services .services__container .services__inner .service__card:nth-of-type(2) .service__card-list {
-    margin-bottom: 80px;
+    margin-bottom: 70px;
   }
   .services .services__container .services__inner .service__card:nth-of-type(2) .service__card-list:lang(uk) {
-    margin-bottom: 76px;
+    margin-bottom: 61px;
   }
   .faq .faq__container .faq__title {
     font-size: 28px;
@@ -3054,7 +3105,7 @@ footer .footer__container .footer__bottom .footer__copyright {
   }
   header .header__container .header__nav .header__nav-contact {
     font-size: 15px;
-    padding: 22px 68px;
+    padding: 22px 83px;
   }
   header .header__container .header__nav .header__nav-contact:lang(ru) {
     padding: 22px 45px;
@@ -3082,7 +3133,7 @@ footer .footer__container .footer__bottom .footer__copyright {
   }
   .hero .hero__container .hero__button {
     font-size: 15px;
-    padding: 22px 68px;
+    padding: 22px 83px;
   }
   .hero .hero__container .hero__button:lang(ru) {
     padding: 22px 45px;
@@ -3174,10 +3225,16 @@ footer .footer__container .footer__bottom .footer__copyright {
   }
   .services .services__container .services__inner .service__card {
     width: 335px;
-    padding-bottom: 30px;
+    padding: 55px 30px 30px;
   }
   .services .services__container .services__inner .service__card .service__card-list {
     margin-bottom: 42px;
+  }
+  .services .services__container .services__inner .service__card .service__card-list:lang(ru) {
+    margin-bottom: 30px;
+  }
+  .services .services__container .services__inner .service__card .service__card-list:lang(uk) {
+    margin-bottom: 30px;
   }
   .services .services__container .services__inner .service__card .service__card-list .service__card-item {
     font-size: 15px;
@@ -3189,18 +3246,24 @@ footer .footer__container .footer__bottom .footer__copyright {
     font-size: 13px;
   }
   .services .services__container .services__inner .service__card .service__button {
-    padding: 19px 78px;
+    padding: 19px 93px;
     font-size: 22px;
     border-radius: 22px;
+  }
+  .services .services__container .services__inner .service__card .service__button:lang(ru) {
+    padding: 19px 77px;
+  }
+  .services .services__container .services__inner .service__card .service__button:lang(uk) {
+    padding: 19px 84px;
   }
   .services .services__container .services__inner .service__card:nth-of-type(2) .service__card-list {
     margin-bottom: 90px;
   }
   .services .services__container .services__inner .service__card:nth-of-type(2) .service__card-list:lang(ru) {
-    margin-bottom: 74px;
+    margin-bottom: 62px;
   }
   .services .services__container .services__inner .service__card:nth-of-type(2) .service__card-list:lang(uk) {
-    margin-bottom: 106px;
+    margin-bottom: 62px;
   }
   .faq .faq__container .faq__title {
     font-size: 28px;
@@ -3357,7 +3420,7 @@ footer .footer__container .footer__bottom .footer__copyright {
   }
   header .header__container .header__nav .header__nav-contact {
     font-size: 14px;
-    padding: 22px 64px;
+    padding: 22px 83px;
   }
   header .header__container .header__nav .header__nav-contact:lang(ru) {
     padding: 22px 47px;
@@ -3385,7 +3448,7 @@ footer .footer__container .footer__bottom .footer__copyright {
   }
   .hero .hero__container .hero__button {
     font-size: 14px;
-    padding: 22px 64px;
+    padding: 22px 83px;
   }
   .hero .hero__container .hero__button:lang(ru) {
     padding: 22px 47px;
@@ -3478,7 +3541,7 @@ footer .footer__container .footer__bottom .footer__copyright {
   }
   .services .services__container .services__inner .service__card {
     width: 320px;
-    padding-bottom: 30px;
+    padding: 55px 30px 30px;
   }
   .services .services__container .services__inner .service__card .service__card-title {
     font-size: 36px;
@@ -3487,7 +3550,7 @@ footer .footer__container .footer__bottom .footer__copyright {
     font-size: 13px;
   }
   .services .services__container .services__inner .service__card .service__card-list {
-    margin-bottom: 42px;
+    margin-bottom: 30px;
   }
   .services .services__container .services__inner .service__card .service__card-list .service__card-item {
     font-size: 14px;
@@ -3501,18 +3564,24 @@ footer .footer__container .footer__bottom .footer__copyright {
     height: 18px;
   }
   .services .services__container .services__inner .service__card .service__button {
-    padding: 18px 74px;
+    padding: 18px 96px;
     font-size: 21px;
     border-radius: 21px;
   }
+  .services .services__container .services__inner .service__card .service__button:lang(ru) {
+    padding: 18px 80px;
+  }
+  .services .services__container .services__inner .service__card .service__button:lang(uk) {
+    padding: 18px 86px;
+  }
   .services .services__container .services__inner .service__card:nth-of-type(2) .service__card-list {
-    margin-bottom: 70px;
+    margin-bottom: 77px;
   }
   .services .services__container .services__inner .service__card:nth-of-type(2) .service__card-list:lang(ru) {
-    margin-bottom: 74px;
+    margin-bottom: 61px;
   }
   .services .services__container .services__inner .service__card:nth-of-type(2) .service__card-list:lang(uk) {
-    margin-bottom: 124px;
+    margin-bottom: 60px;
   }
   .faq .faq__container .faq__title {
     font-size: 26px;
@@ -3664,23 +3733,15 @@ footer .footer__container .footer__bottom .footer__copyright {
 	+проверить переносы form-note
 		1920 1440 1280 1024 744 440 390 375 360
 	+gap между top и bottom в карточках about (ru + en + uk)
-		1920 1440 1280 1024 744 440 390 375 360
-	+проверить отступ между button и ul в карточках  services (ru + en + uk) (снизить padding боковой до 30px начиная от 1024???? + увеличить нижний)
-		1920 1440 1280 1024 744 440 390 375 360
-	проверить размеры кнопки hero -> burger (ru + en + uk)
-		1024 744 440 390 375 360
+		1920 1440 1280 1024 744 440 390 375 360	
 
 -проверить переносы текстов chrome + firefox :^)
 
 -придумать hover эффекты
 
--ускорить закрытие выбора страны и пакета в form
-
 -убрать костыли margin-bottom на карточка services (?)
 
 -безопасность forms -> sheets
-
--отключить автоперевод и перевод через плагины в браузерах (?)
 
 -сборка проекта:
 	+файлы
