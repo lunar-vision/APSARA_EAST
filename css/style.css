@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -3975,11 +3974,4 @@ footer .footer__container .footer__bottom .footer__copyright {
   .header__overlay {
     display: none !important;
   }
-}
-/*
-
--сборка проекта:
-	+html
-	+sео
-
-*//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
