@@ -359,7 +359,7 @@ form.querySelector(".form__card-submit").addEventListener("click", () => {
 	setServiceError(!hiddenServiceInput.value);
 });
 
-const SCRIPT_URL = "https://latina-bra-hints-sugar.trycloudflare.com/api/lead";
+const SCRIPT_URL = "https://api.apsaracambodia.com/api/lead";
 
 function makeLeadId() {
 	const date = new Date().toISOString().slice(0, 10).replaceAll("-", "");
