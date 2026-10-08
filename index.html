@@ -24,11 +24,11 @@
 		<div class="header__container">
 			<div class="header__logo">
 				<a class="header__logo-link" href="index.html">
-					<img class="header__logo-img" src="img/logo.svg">
+					<img class="header__logo-img" src="img/logo.svg" alt="APSARA EAST logo">
 				</a>
 
 			</div>
-			<nav class="header__nav">
+			<nav class="header__nav" aria-label="Main navigation">
 				<ul class="header__nav-list">
 					<li class="header__nav-item">
 						<a class="header__nav-link" onclick="closeMenu()" href="#services">
@@ -49,9 +49,9 @@
 				</ul>
 				<button class="header__nav-contact" data-popup-open>Get Started</button>
 				<div class="header__nav-socials">
-					<a class="header__nav-media" href="#">
-						<svg class="nav-media__img" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-							fill="none" class="socials-link__img" viewBox="7450.071 5400 50 50">
+					<a class="nav-socials__link" href="https://t.me/ApsaraEast_bot" aria-label="Telegram">
+						<svg class="nav-socials__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="50"
+							height="50" fill="none" viewBox="7450.071 5400 50 50">
 							<defs>
 								<clipPath id="a" class="frame-clip frame-clip-def">
 									<rect width="50" height="50" x="7450.071" y="5400" rx="10" ry="10" />
@@ -92,9 +92,9 @@
 							</g>
 						</svg>
 					</a>
-					<a class="header__nav-media" href="#">
-						<svg class="nav-media__img" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-							viewBox="7537.357 5400 50 50" fill="none">
+					<a style="display: none;" class="nav-socials__link" href="#" aria-label="Whatsapp">
+						<svg class="nav-socials__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="50"
+							height="50" viewBox="7536.857 5400 50 50" fill="none">
 							<path d="m7548.858 5438.5 2.475-5.7a13.5 13.5 0 1 1 5.1 4.35z" stroke="#27d367"
 								stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 							<path
@@ -107,7 +107,7 @@
 
 			<div class="header__actions">
 				<button class="header__contact-btn" data-popup-open>Contact</button>
-				<details class="header__lang">
+				<details class="header__lang" aria-label="Language selection">
 					<summary>EN</summary>
 					<ul class="langs__dropdown">
 						<li class="dropdown__lang">
@@ -137,7 +137,7 @@
 						life</span>
 					–
 					it all starts with one simple form.</h2>
-				<button class="hero__button" data-popup-open>Get Started</button>
+				<button class="hero__button" type="button" data-popup-open>Get Started</button>
 			</div>
 
 		</section>
@@ -145,7 +145,7 @@
 		<section class="about" id="about">
 			<div class="about__container container">
 				<aside class="about__desc">
-					<img class="about__desc-img" src="img/about.webp">
+					<img class="about__desc-img" src="img/about.webp" alt="APSARA EAST about illustration">
 					<div class="about__desc-inner">
 						<p class="about__desc-text"><span class="desc__wrap">APSARA EAST</span> –
 							consulting&nbsp;company
@@ -159,7 +159,7 @@
 					<article class="about__card">
 						<div class="about__card-top">
 							<h3 class="about__card-title">Visa Support</h3>
-							<img class="about__card-icon" src="img/about_world.svg">
+							<img class="about__card-icon" src="img/about_world.svg" alt="" aria-hidden="true">
 						</div>
 						<div class="about__card-bottom">
 							<p class="about__card-text">
@@ -171,7 +171,7 @@
 					<article class="about__card about__card--invert">
 						<div class="about__card-top">
 							<h3 class="about__card-title">Visa Application</h3>
-							<img class="about__card-icon" src="img/about_fingerprint.svg">
+							<img class="about__card-icon" src="img/about_fingerprint.svg" alt="" aria-hidden="true">
 						</div>
 						<div class="about__card-bottom">
 							<p class="about__card-text">
@@ -183,7 +183,7 @@
 					<article class="about__card about__card--invert">
 						<div class="about__card-top">
 							<h3 class="about__card-title">Bank Accounts</h3>
-							<img class="about__card-icon" src="img/about_transaction.svg">
+							<img class="about__card-icon" src="img/about_transaction.svg" alt="" aria-hidden="true">
 						</div>
 						<div class="about__card-bottom">
 							<p class="about__card-text">
@@ -196,7 +196,7 @@
 					<article class="about__card">
 						<div class="about__card-top">
 							<h3 class="about__card-title">Business Registration</h3>
-							<img class="about__card-icon" src="img/about_briefcase.svg">
+							<img class="about__card-icon" src="img/about_briefcase.svg" alt="" aria-hidden="true">
 						</div>
 						<div class="about__card-bottom">
 							<p class="about__card-text">
@@ -209,7 +209,7 @@
 					<article class="about__card">
 						<div class="about__card-top">
 							<h3 class="about__card-title">Relocation</h3>
-							<img class="about__card-icon" src="img/about_shield-check.svg">
+							<img class="about__card-icon" src="img/about_shield-check.svg" alt="" aria-hidden="true">
 						</div>
 						<div class="about__card-bottom">
 							<p class="about__card-text">
@@ -221,7 +221,7 @@
 					<article class="about__card about__card--invert">
 						<div class="about__card-top">
 							<h3 class="about__card-title">Language Support</h3>
-							<img class="about__card-icon" src="img/about_lang-support.svg">
+							<img class="about__card-icon" src="img/about_lang-support.svg" alt="" aria-hidden="true">
 						</div>
 						<div class="about__card-bottom">
 							<p class="about__card-text">
@@ -256,7 +256,8 @@
 							<li class="service__card-item service__card-item--disabled">Settling-in support
 							</li>
 						</ul>
-						<button class="service__button" data-popup-open data-service="Standart">Select</button>
+						<button class="service__button" type="button" data-popup-open
+							data-service="Standart">Select</button>
 					</article>
 					<article class="service__card service__card--invert">
 						<p class="service__card-badge">EXPRESS</p>
@@ -279,14 +280,15 @@
 
 
 						</ul>
-						<button class="service__button" data-popup-open data-service="Standart+">Select</button>
+						<button class="service__button" type="button" data-popup-open
+							data-service="Standart+">Select</button>
 					</article>
 				</div>
 			</div>
 		</section>
 
-		<section class="QR">
-		</section>
+		<!-- <section class="QR">
+		</section> -->
 
 		<section class="faq" id="faq">
 			<div class="faq__container container">
@@ -294,11 +296,12 @@
 				<div class="faq__inner">
 					<div class="faq__content">
 						<div class="faq__accordion">
-							<div class="accordion__item">
-								<div class="accordion__title">Can I apply if I don't live in a&nbsp;major city?
+							<div class="accordion__item" role="region" aria-labelledby="faq-1">
+								<div class="accordion__title" id="faq-1" aria-expanded="false"
+									aria-controls="faq-content-1">Can I apply if I don't live in a&nbsp;major city?
 								</div>
-								<svg class="accordion__title-icon" xmlns="http://www.w3.org/2000/svg" width="50"
-									height="50" fill="none" viewBox="8455 4145 50 50">
+								<svg class="accordion__title-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+									width="50" height="50" fill="none" viewBox="8455 4145 50 50">
 									<g class="icon icon-tabler icons-tabler-outline icon-tabler-plane"
 										style="fill:#000">
 										<path fill="none" d="M8455 4145h50v50h-50z" class="fills" style="fill:none" />
@@ -320,7 +323,7 @@
 										</g>
 									</g>
 								</svg>
-								<div class="accordion__content">
+								<div class="accordion__content" id="faq-content-1" role="region">
 									<p class="accordion__text">
 										Yes. You can apply for a Cambodia visa remotely. <span
 											class="accordion__text-devider">
@@ -331,10 +334,11 @@
 									</p>
 								</div>
 							</div>
-							<div class="accordion__item">
-								<div class="accordion__title">What documents do I need to get started?</div>
-								<svg class="accordion__title-icon" xmlns="http://www.w3.org/2000/svg" width="50"
-									height="50" fill="none" viewBox="8455 4145 50 50">
+							<div class="accordion__item" role="region" aria-labelledby="faq-2">
+								<div class="accordion__title" id="faq-2" aria-expanded="false"
+									aria-controls="faq-content-2">What documents do I need to get started?</div>
+								<svg class="accordion__title-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+									width="50" height="50" fill="none" viewBox="8455 4145 50 50">
 									<g class="icon icon-tabler icons-tabler-outline icon-tabler-plane"
 										style="fill:#000">
 										<path fill="none" d="M8455 4145h50v50h-50z" class="fills" style="fill:none" />
@@ -356,7 +360,7 @@
 										</g>
 									</g>
 								</svg>
-								<div class="accordion__content">
+								<div class="accordion__content" id="faq-content-2" role="region">
 									<p class="accordion__text">
 										To get started, you only need your passport and personal details. <span
 											class="accordion__text-devider">Your manager
@@ -365,10 +369,11 @@
 									</p>
 								</div>
 							</div>
-							<div class="accordion__item">
-								<div class="accordion__title">How long does the process take?</div>
-								<svg class="accordion__title-icon" xmlns="http://www.w3.org/2000/svg" width="50"
-									height="50" fill="none" viewBox="8455 4145 50 50">
+							<div class="accordion__item" role="region" aria-labelledby="faq-3">
+								<div class="accordion__title" id="faq-3" aria-expanded="false"
+									aria-controls="faq-content-3">How long does the process take?</div>
+								<svg class="accordion__title-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+									width="50" height="50" fill="none" viewBox="8455 4145 50 50">
 									<g class="icon icon-tabler icons-tabler-outline icon-tabler-plane"
 										style="fill:#000">
 										<path fill="none" d="M8455 4145h50v50h-50z" class="fills" style="fill:none" />
@@ -390,7 +395,7 @@
 										</g>
 									</g>
 								</svg>
-								<div class="accordion__content">
+								<div class="accordion__content" id="faq-content-3" role="region">
 									<p class="accordion__text">
 										Processing times depend on the service and your circumstances. <span
 											class="accordion__text-devider">We’ll provide an
@@ -399,11 +404,12 @@
 									</p>
 								</div>
 							</div>
-							<div class="accordion__item">
-								<div class="accordion__title">Can everything be done remotely, without being there in
-									person?</div>
-								<svg class="accordion__title-icon" xmlns="http://www.w3.org/2000/svg" width="50"
-									height="50" fill="none" viewBox="8455 4145 50 50">
+							<div class="accordion__item" role="region" aria-labelledby="faq-4">
+								<div class="accordion__title" id="faq-4" aria-expanded="false"
+									aria-controls="faq-content-4">Can everything be done remotely, without being there
+									in&nbsp;person?</div>
+								<svg class="accordion__title-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+									width="50" height="50" fill="none" viewBox="8455 4145 50 50">
 									<g class="icon icon-tabler icons-tabler-outline icon-tabler-plane"
 										style="fill:#000">
 										<path fill="none" d="M8455 4145h50v50h-50z" class="fills" style="fill:none" />
@@ -425,7 +431,7 @@
 										</g>
 									</g>
 								</svg>
-								<div class="accordion__content">
+								<div class="accordion__content" id="faq-content-4" role="region">
 									<p class="accordion__text">
 										Yes, in most cases the process is fully remote. <span
 											class="accordion__text-devider">If your case requires extra
@@ -437,10 +443,12 @@
 									</p>
 								</div>
 							</div>
-							<div class="accordion__item">
-								<div class="accordion__title">What happens if my visa or registration is denied?</div>
-								<svg class="accordion__title-icon" xmlns="http://www.w3.org/2000/svg" width="50"
-									height="50" fill="none" viewBox="8455 4145 50 50">
+							<div class="accordion__item" role="region" aria-labelledby="faq-5">
+								<div class="accordion__title" id="faq-5" aria-expanded="false"
+									aria-controls="faq-content-5">What happens if my visa or registration is denied?
+								</div>
+								<svg class="accordion__title-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+									width="50" height="50" fill="none" viewBox="8455 4145 50 50">
 									<g class="icon icon-tabler icons-tabler-outline icon-tabler-plane"
 										style="fill:#000">
 										<path fill="none" d="M8455 4145h50v50h-50z" class="fills" style="fill:none" />
@@ -462,7 +470,7 @@
 										</g>
 									</g>
 								</svg>
-								<div class="accordion__content">
+								<div class="accordion__content" id="faq-content-5" role="region">
 									<p class="accordion__text">
 										We’ll review the reason for the refusal, <span
 											class="accordion__text-devider">help correct your documents and guide
@@ -473,10 +481,11 @@
 									</p>
 								</div>
 							</div>
-							<div class="accordion__item">
-								<div class="accordion__title">Do you work with citizens of all countries?</div>
-								<svg class="accordion__title-icon" xmlns="http://www.w3.org/2000/svg" width="50"
-									height="50" fill="none" viewBox="8455 4145 50 50">
+							<div class="accordion__item" role="region" aria-labelledby="faq-6">
+								<div class="accordion__title" id="faq-6" aria-expanded="false"
+									aria-controls="faq-content-6">Do you work with citizens of all countries?</div>
+								<svg class="accordion__title-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+									width="50" height="50" fill="none" viewBox="8455 4145 50 50">
 									<g class="icon icon-tabler icons-tabler-outline icon-tabler-plane"
 										style="fill:#000">
 										<path fill="none" d="M8455 4145h50v50h-50z" class="fills" style="fill:none" />
@@ -498,7 +507,7 @@
 										</g>
 									</g>
 								</svg>
-								<div class="accordion__content">
+								<div class="accordion__content" id="faq-content-6" role="region">
 									<p class="accordion__text">
 										We work with clients from most countries. Restrictions may apply to certain
 										jurisdictions. <span class="accordion__text-devider">Your manager can clarify
@@ -507,10 +516,11 @@
 									</p>
 								</div>
 							</div>
-							<div class="accordion__item">
-								<div class="accordion__title">What payment methods do you accept?</div>
-								<svg class="accordion__title-icon" xmlns="http://www.w3.org/2000/svg" width="50"
-									height="50" fill="none" viewBox="8455 4145 50 50">
+							<div class="accordion__item" role="region" aria-labelledby="faq-7">
+								<div class="accordion__title" id="faq-7" aria-expanded="false"
+									aria-controls="faq-content-7">What payment methods do you accept?</div>
+								<svg class="accordion__title-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+									width="50" height="50" fill="none" viewBox="8455 4145 50 50">
 									<g class="icon icon-tabler icons-tabler-outline icon-tabler-plane"
 										style="fill:#000">
 										<path fill="none" d="M8455 4145h50v50h-50z" class="fills" style="fill:none" />
@@ -532,7 +542,7 @@
 										</g>
 									</g>
 								</svg>
-								<div class="accordion__content">
+								<div class="accordion__content" id="faq-content-7" role="region">
 									<p class="accordion__text">
 										Several payment methods are available, including bank transfers and
 										cryptocurrency. <span class="accordion__text-devider">Your manager will provide
@@ -542,10 +552,11 @@
 									</p>
 								</div>
 							</div>
-							<div class="accordion__item">
-								<div class="accordion__title">What exactly is covered in the package price?</div>
-								<svg class="accordion__title-icon" xmlns="http://www.w3.org/2000/svg" width="50"
-									height="50" fill="none" viewBox="8455 4145 50 50">
+							<div class="accordion__item" role="region" aria-labelledby="faq-8">
+								<div class="accordion__title" id="faq-8" aria-expanded="false"
+									aria-controls="faq-content-8">What exactly is covered in the package price?</div>
+								<svg class="accordion__title-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+									width="50" height="50" fill="none" viewBox="8455 4145 50 50">
 									<g class="icon icon-tabler icons-tabler-outline icon-tabler-plane"
 										style="fill:#000">
 										<path fill="none" d="M8455 4145h50v50h-50z" class="fills" style="fill:none" />
@@ -567,7 +578,7 @@
 										</g>
 									</g>
 								</svg>
-								<div class="accordion__content">
+								<div class="accordion__content" id="faq-content-8" role="region">
 									<p class="accordion__text">
 										What’s included depends on your chosen package. <span
 											class="accordion__text-devider">Before we begin, your manager
@@ -580,13 +591,13 @@
 						</div>
 					</div>
 					<aside class="faq__media">
-						<img class="faq__media-img" src="img/faq.webp">
+						<img class="faq__media-img" src="img/faq.webp" alt="Frequently asked questions illustration">
 					</aside>
 				</div>
 			</div>
 		</section>
 
-		<dialog class="popup" id="order-popup" aria-labelledby="popup-title">
+		<dialog class="popup" id="order-popup" aria-label="Lead from">
 			<div class="popup__inner">
 				<button class="popup__close" type="button" aria-label="Закрыть" data-popup-close>
 					<svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -600,14 +611,23 @@
 					<aside class="popup__aside">
 						<h2 class="popup__title" id="popup-title">Let's discuss your Cambodia visa details</h2>
 						<ul class="popup__features">
-							<li class="popup__feature"><img src="img/popup_clock.svg" alt="">We'll reply within an hour
+							<li class="popup__feature"><img src="img/popup_clock.svg" alt="" aria-hidden="true">We'll
+								reply
+								within an hour
 							</li>
-							<li class="popup__feature"><img src="img/popup_stat.svg" alt="">Individual approach</li>
-							<li class="popup__feature"><img src="img/popup_sheet.svg" alt="">We handle the paperwork
+							<li class="popup__feature"><img src="img/popup_stat.svg" alt=""
+									aria-hidden="true">Individual
+								approach</li>
+							<li class="popup__feature"><img src="img/popup_sheet.svg" alt="" aria-hidden="true">We
+								handle the
+								paperwork
 							</li>
-							<li class="popup__feature"><img src="img/popup_check.svg" alt="">Step-by-step support
+							<li class="popup__feature"><img src="img/popup_check.svg" alt=""
+									aria-hidden="true">Step-by-step
+								support
 							</li>
-							<li class="popup__feature"><img src="img/popup_lock.svg" alt="">Secure & Confidential</li>
+							<li class="popup__feature"><img src="img/popup_lock.svg" alt="" aria-hidden="true">Secure &
+								Confidential</li>
 						</ul>
 					</aside>
 
@@ -624,13 +644,13 @@
 									<label class="form__card-label" for="name">First Name<span
 											class="label-required">*</span></label>
 									<input class="form__card-input" type="text" maxlength="31" id="name" name="name"
-										placeholder="Davit" required>
+										placeholder="Davit" autocomplete="off" ; required>
 								</div>
 								<div class="form__card-group">
 									<label class="form__card-label" for="surname">Last Name<span
 											class="label-required">*</span></label>
 									<input class="form__card-input" type="text" maxlength="31" id="surname"
-										name="surname" placeholder="Sargsyan" required>
+										name="surname" placeholder="Sargsyan" autocomplete="off" ; required>
 								</div>
 							</div>
 
@@ -638,15 +658,23 @@
 								<label class="form__card-label" for="email">Email<span
 										class="label-required">*</span></label>
 								<input class="form__card-input" type="email" id="email" maxlength="100" name="email"
-									placeholder="example@gmail.com" required>
+									placeholder="example@gmail.com" autocomplete="off" ; required>
+							</div>
+
+							<div class="honey" aria-hidden="true">
+								<label for="website">Website</label>
+								<input type="text" id="website" name="website" tabindex="-1" autocomplete="off"
+									value="" />
 							</div>
 
 							<div class="form__card-group">
 								<label class="form__card-label" for="phone">Phone Number<span
 										class="label-required">*</span></label>
 								<input class="form__card-input" type="tel" inputmode="tel" maxlength="15" id="phone"
-									name="phone" placeholder="+374" required>
+									name="phone" placeholder="+374" autocomplete="off" ; required>
 							</div>
+
+							<input type="hidden" name="form_start_time" id="form_start_time" value="" />
 
 							<div class="form__card-group">
 								<label class="form__card-label" for="country-input">
@@ -663,7 +691,8 @@
 								<label class="form__card-label" id="service-label">Select a Service Package<span
 										class="label-required">*</span></label>
 								<div class="form__card-wrap custom-select" id="custom-service-select">
-									<input type="hidden" id="service" name="service" value="" required>
+									<input type="hidden" id="service" name="service" value="" autocomplete="off" ;
+										required>
 									<button type="button" class="form__card-input custom-select__button is-placeholder"
 										aria-haspopup="listbox" aria-expanded="false">
 										<span class="custom-select__text">Select...</span>
@@ -675,6 +704,10 @@
 											Standart+</li>
 									</ul>
 								</div>
+							</div>
+
+							<div class="hp-field" aria-hidden="true">
+								<input type="text" name="hp_email" id="hp_email" tabindex="-1" autocomplete="off" />
 							</div>
 
 							<div class="form__card-row">
@@ -698,8 +731,8 @@
 												d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.7l.4-.5c.1-.2.1-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2.2-.2 3.9a11.6 11.6 0 0 0 4.5 4.2c1.7.8 2.4.9 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.4-.3z" />
 										</svg>
 										<input class="form__card-input" type="tel" inputmode="tel" maxlength="15"
-											id="whatsapp" name="whatsapp" placeholder="+420770663222"
-											autocomplete="tel">
+											id="whatsapp" name="whatsapp" placeholder="+420770663222" autocomplete:
+											off;>
 									</div>
 								</fieldset>
 							</div>
@@ -727,14 +760,14 @@
 			<div class="footer__top">
 				<div class="footer__socials">
 					<div class="footer__logo">
-						<img class="footer__logo-img" src="img/logo.svg">
+						<img class="footer__logo-img" src="img/logo.svg" alt="APSARA EAST logo">
 					</div>
 					<p class="footer__socials-text">Your Reliable Partner
 						in Southeast Asia</p>
 					<div class="footer__socials-links">
-						<a class="footer__socials-link" href="#">
-							<svg class="socials-link__img" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-								fill="none" viewBox="7450.071 5400 50 50">
+						<a class="footer__socials-link" href="https://t.me/ApsaraEast_bot" aria-label="Telegram">
+							<svg class="socials-link__img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+								width="50" height="50" fill="none" viewBox="7450.071 5400 50 50">
 								<defs>
 									<clipPath id="a" class="frame-clip frame-clip-def">
 										<rect width="50" height="50" x="7450.071" y="5400" rx="10" ry="10" />
@@ -777,9 +810,9 @@
 								</g>
 							</svg>
 						</a>
-						<a class="footer__socials-link" href="#">
-							<svg class="socials-link__img" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-								viewBox="7537.357 5400 50 50" fill="none">
+						<a style="display: none;" class="footer__socials-link" href="#" aria-label="Whatsapp">
+							<svg class="socials-link__img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+								width="50" height="50" viewBox="7536.857 5400 50 50" fill="none">
 								<path d="m7548.858 5438.5 2.475-5.7a13.5 13.5 0 1 1 5.1 4.35z" stroke="#27d367"
 									stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 								<path
@@ -791,8 +824,8 @@
 				</div>
 				<div class="footer__contacts">
 					<h3 class="footer__column-title">Contacts</h3>
-					<p class="footer__contact-text">apsara.support@gmail.com</p>
-					<a class="footer__contact-text" href="tel:+76667777777">+76667777777</a>
+					<a class="footer__contact-text" href="mailto:apsara.support@gmail.com">apsara.support@gmail.com</a>
+					<a class="footer__contact-text" href="tel:+85598686680">+855&nbsp;98&nbsp;686&nbsp;680</a>
 				</div>
 				<div class="footer__open-hours">
 					<h3 class="footer__column-title">Working Hours</h3>
@@ -812,9 +845,9 @@
 				<div class="footer__pay-methods">
 					<h3 class="footer__column-title">We Accept</h3>
 					<div class="pay-methods">
-						<img class="pay-method__icon" src="img/footer_mastercard.svg">
-						<img class="pay-method__icon" src="img/footer_visa.svg">
-						<img class="pay-method__icon" src="img/footer_crypto.svg">
+						<img class="pay-method__icon" src="img/footer_mastercard.svg" alt="Mastercard">
+						<img class="pay-method__icon" src="img/footer_visa.svg" alt="Visa">
+						<img class="pay-method__icon" src="img/footer_crypto.svg" alt="Cryptocurrency">
 					</div>
 
 				</div>

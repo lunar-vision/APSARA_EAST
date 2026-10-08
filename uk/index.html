@@ -24,11 +24,11 @@
 		<div class="header__container">
 			<div class="header__logo">
 				<a class="header__logo-link" href="../ru/index.html">
-					<img class="header__logo-img" src="../img/logo.svg">
+					<img class="header__logo-img" src="../img/logo.svg" alt="Логотип APSARA EAST">
 				</a>
 
 			</div>
-			<nav class="header__nav">
+			<nav class="header__nav" aria-label="Головна навігація">
 				<ul class="header__nav-list">
 					<li class="header__nav-item">
 						<a class="header__nav-link" onclick="closeMenu()" href="#services">
@@ -49,9 +49,9 @@
 				</ul>
 				<button class="header__nav-contact" data-popup-open>Почати оформлення</button>
 				<div class="header__nav-socials">
-					<a class="header__nav-media" href="#">
-						<svg class="nav-media__img" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-							fill="none" class="socials-link__img" viewBox="7450.071 5400 50 50">
+					<a class="nav-socials__link" href="https://t.me/ApsaraEast_bot" aria-label="Telegram">
+						<svg class="nav-socials__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="50"
+							height="50" fill="none" viewBox="7450.071 5400 50 50">
 							<defs>
 								<clipPath id="a" class="frame-clip frame-clip-def">
 									<rect width="50" height="50" x="7450.071" y="5400" rx="10" ry="10" />
@@ -92,9 +92,9 @@
 							</g>
 						</svg>
 					</a>
-					<a class="header__nav-media" href="#">
-						<svg class="nav-media__img" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-							viewBox="7537.357 5400 50 50" fill="none">
+					<a style="display: none;" class="nav-socials__link" href="#" aria-label="Whatsapp">
+						<svg class="nav-socials__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="50"
+							height="50" viewBox="7536.857 5400 50 50" fill="none">
 							<path d="m7548.858 5438.5 2.475-5.7a13.5 13.5 0 1 1 5.1 4.35z" stroke="#27d367"
 								stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 							<path
@@ -107,14 +107,14 @@
 
 			<div class="header__actions">
 				<button class="header__contact-btn" data-popup-open>Контакти</button>
-				<details class="header__lang">
+				<details class="header__lang" aria-label="Вибір мови">
 					<summary>UA</summary>
 					<ul class="langs__dropdown">
 						<li class="dropdown__lang">
-							<a href="../index.html" hreflang="ru">EN</a>
+							<a href="../index.html" hreflang="en">EN</a>
 						</li>
 						<li class="dropdown__lang">
-							<a href="../ru/index.html" hreflang="uk">RU</a>
+							<a href="../ru/index.html" hreflang="ru">RU</a>
 						</li>
 					</ul>
 				</details>
@@ -136,7 +136,7 @@
 				<h2 class="hero__subtitle">Легальний статус, новий ринок, <span class="hero__subtitle-wrap">нове
 						життя</span> –
 					почніть заповненням однієї форми</h2>
-				<button class="hero__button" data-popup-open>Почати оформлення</button>
+				<button class="hero__button" type="button" data-popup-open>Почати оформлення</button>
 			</div>
 
 		</section>
@@ -144,7 +144,7 @@
 		<section class="about" id="about">
 			<div class="about__container container">
 				<aside class="about__desc">
-					<img class="about__desc-img" src="../img/about.webp">
+					<img class="about__desc-img" src="../img/about.webp" alt="APSARA EAST про нас ілюстрація">
 					<div class="about__desc-inner">
 						<p class="about__desc-text"><span class="desc__wrap">APSARA EAST</span> –
 							консалтингова&nbsp;компанія, яка допомагає отримати довгострокову бізнес-візу
@@ -157,7 +157,7 @@
 					<article class="about__card">
 						<div class="about__card-top">
 							<h3 class="about__card-title">Візова підтримка</h3>
-							<img class="about__card-icon" src="../img/about_world.svg">
+							<img class="about__card-icon" src="../img/about_world.svg" aria-hidden="true" alt="">
 						</div>
 						<div class="about__card-bottom">
 							<p class="about__card-text">
@@ -171,7 +171,7 @@
 					<article class="about__card about__card--invert">
 						<div class="about__card-top">
 							<h3 class="about__card-title">Оформлення візи</h3>
-							<img class="about__card-icon" src="../img/about_fingerprint.svg">
+							<img class="about__card-icon" src="../img/about_fingerprint.svg" aria-hidden="true" alt="">
 						</div>
 						<div class="about__card-bottom">
 							<p class="about__card-text">
@@ -183,20 +183,21 @@
 					<article class="about__card about__card--invert">
 						<div class="about__card-top">
 							<h3 class="about__card-title">Банківські рахунки</h3>
-							<img class="about__card-icon" src="../img/about_transaction.svg">
+							<img class="about__card-icon" src="../img/about_transaction.svg" aria-hidden="true" alt="">
 						</div>
 						<div class="about__card-bottom">
 							<p class="about__card-text">
-								Підкажемо, <span class="text__wrap">як відкрити банківський рахунок у Камбоджі,
-								</span><span class="card-text__devider">які вимоги висуває банк і&nbsp;які документи
-									знадобляться.</span>
+								Підкажемо, <span><span class="text__wrap">як відкрити банківський рахунок
+										у&nbsp;Камбоджі,
+									</span><span class="card-text__devider">які вимоги висуває банк і&nbsp;які документи
+										знадобляться.</span></span>
 							</p>
 						</div>
 					</article>
 					<article class="about__card">
 						<div class="about__card-top">
 							<h3 class="about__card-title">Реєстрація бізнесу</h3>
-							<img class="about__card-icon" src="../img/about_briefcase.svg">
+							<img class="about__card-icon" src="../img/about_briefcase.svg" aria-hidden="true" alt="">
 						</div>
 						<div class="about__card-bottom">
 							<p class="about__card-text">
@@ -209,7 +210,7 @@
 					<article class="about__card">
 						<div class="about__card-top">
 							<h3 class="about__card-title">Релокація</h3>
-							<img class="about__card-icon" src="../img/about_shield-check.svg">
+							<img class="about__card-icon" src="../img/about_shield-check.svg" aria-hidden="true" alt="">
 						</div>
 						<div class="about__card-bottom">
 							<p class="about__card-text">
@@ -220,7 +221,7 @@
 					<article class="about__card about__card--invert">
 						<div class="about__card-top">
 							<h3 class="about__card-title">Мовна підтримка</h3>
-							<img class="about__card-icon" src="../img/about_lang-support.svg">
+							<img class="about__card-icon" src="../img/about_lang-support.svg" aria-hidden="true" alt="">
 						</div>
 						<div class="about__card-bottom">
 							<p class="about__card-text">
@@ -256,7 +257,7 @@
 								в&nbsp;країні
 							</li>
 						</ul>
-						<button class="service__button" data-popup-open data-service="Standart">Обрати</button>
+						<button class="service__button" type="button" data-popup-open data-service="Standart">Обрати</button>
 					</article>
 					<article class="service__card service__card--invert">
 						<p class="service__card-badge">ТЕРМІНОВИЙ</p>
@@ -279,14 +280,14 @@
 
 
 						</ul>
-						<button class="service__button" data-popup-open data-service="Standart+">Обрати</button>
+						<button class="service__button" type="button" data-popup-open data-service="Standart+">Обрати</button>
 					</article>
 				</div>
 			</div>
 		</section>
 
-		<section class="QR">
-		</section>
+		<!-- <section class="QR">
+		</section> -->
 
 		<section class="faq" id="faq">
 			<div class="faq__container container">
@@ -294,11 +295,14 @@
 				<div class="faq__inner">
 					<div class="faq__content">
 						<div class="faq__accordion">
-							<div class="accordion__item">
-								<div class="accordion__title">Чи можу я подати заявку, якщо я не живу у великому місті?
+							<div class="accordion__item" role="region" aria-labelledby="faq-1">
+								<div class="accordion__title" id="faq-1" aria-expanded="false"
+									aria-controls="faq-content-1">Чи можу я подати заявку, якщо я не живу
+									у&nbsp;великому
+									місті?
 								</div>
-								<svg class="accordion__title-icon" xmlns="http://www.w3.org/2000/svg" width="50"
-									height="50" fill="none" viewBox="8455 4145 50 50">
+								<svg class="accordion__title-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+									width="50" height="50" fill="none" viewBox="8455 4145 50 50">
 									<g class="icon icon-tabler icons-tabler-outline icon-tabler-plane"
 										style="fill:#000">
 										<path fill="none" d="M8455 4145h50v50h-50z" class="fills" style="fill:none" />
@@ -320,17 +324,19 @@
 										</g>
 									</g>
 								</svg>
-								<div class="accordion__content">
+								<div class="accordion__content" id="faq-content-1" role="region">
 									<p class="accordion__text">
 										Так. Усі процеси вибудовані віддалено: подача документів і&nbsp;консультації
 										проходять онлайн, тож ваше місцезнаходження не&nbsp;має значення.
 									</p>
 								</div>
 							</div>
-							<div class="accordion__item">
-								<div class="accordion__title">Які документи потрібні для початку оформлення?</div>
-								<svg class="accordion__title-icon" xmlns="http://www.w3.org/2000/svg" width="50"
-									height="50" fill="none" viewBox="8455 4145 50 50">
+							<div class="accordion__item" role="region" aria-labelledby="faq-2">
+								<div class="accordion__title" id="faq-2" aria-expanded="false"
+									aria-controls="faq-content-2">Які документи потрібні для&nbsp;початку оформлення?
+								</div>
+								<svg class="accordion__title-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+									width="50" height="50" fill="none" viewBox="8455 4145 50 50">
 									<g class="icon icon-tabler icons-tabler-outline icon-tabler-plane"
 										style="fill:#000">
 										<path fill="none" d="M8455 4145h50v50h-50z" class="fills" style="fill:none" />
@@ -352,7 +358,7 @@
 										</g>
 									</g>
 								</svg>
-								<div class="accordion__content">
+								<div class="accordion__content" id="faq-content-2" role="region">
 									<p class="accordion__text">
 										Для старту достатньо паспорта й&nbsp;анкетних даних. <span
 											class="accordion__text-devider">Далі менеджер допомагає уточнити деталі
@@ -361,10 +367,11 @@
 									</p>
 								</div>
 							</div>
-							<div class="accordion__item">
-								<div class="accordion__title">Скільки часу займає оформлення?</div>
-								<svg class="accordion__title-icon" xmlns="http://www.w3.org/2000/svg" width="50"
-									height="50" fill="none" viewBox="8455 4145 50 50">
+							<div class="accordion__item" role="region" aria-labelledby="faq-3">
+								<div class="accordion__title" id="faq-3" aria-expanded="false"
+									aria-controls="faq-content-3">Скільки часу займає оформлення?</div>
+								<svg class="accordion__title-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+									width="50" height="50" fill="none" viewBox="8455 4145 50 50">
 									<g class="icon icon-tabler icons-tabler-outline icon-tabler-plane"
 										style="fill:#000">
 										<path fill="none" d="M8455 4145h50v50h-50z" class="fills" style="fill:none" />
@@ -386,7 +393,7 @@
 										</g>
 									</g>
 								</svg>
-								<div class="accordion__content">
+								<div class="accordion__content" id="faq-content-3" role="region">
 									<p class="accordion__text">
 										Строки залежать від типу послуги та&nbsp;специфіки вашого запиту. <span
 											class="accordion__text-devider">Орієнтовні рамки ми озвучуємо
@@ -394,10 +401,12 @@
 									</p>
 								</div>
 							</div>
-							<div class="accordion__item">
-								<div class="accordion__title">Чи можна оформити все без особистої присутності?</div>
-								<svg class="accordion__title-icon" xmlns="http://www.w3.org/2000/svg" width="50"
-									height="50" fill="none" viewBox="8455 4145 50 50">
+							<div class="accordion__item" role="region" aria-labelledby="faq-4">
+								<div class="accordion__title" id="faq-4" aria-expanded="false"
+									aria-controls="faq-content-4">Чи можна оформити все без&nbsp;особистої присутності?
+								</div>
+								<svg class="accordion__title-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+									width="50" height="50" fill="none" viewBox="8455 4145 50 50">
 									<g class="icon icon-tabler icons-tabler-outline icon-tabler-plane"
 										style="fill:#000">
 										<path fill="none" d="M8455 4145h50v50h-50z" class="fills" style="fill:none" />
@@ -419,7 +428,7 @@
 										</g>
 									</g>
 								</svg>
-								<div class="accordion__content">
+								<div class="accordion__content" id="faq-content-4" role="region">
 									<p class="accordion__text">
 										Так, у більшості випадків оформлення ведеться дистанційно. <span
 											class="accordion__text-devider">Якщо для вашого запиту знадобляться
@@ -428,11 +437,13 @@
 									</p>
 								</div>
 							</div>
-							<div class="accordion__item">
-								<div class="accordion__title">Що робити, якщо мені відмовлять у візі чи реєстрації?
+							<div class="accordion__item" role="region" aria-labelledby="faq-5">
+								<div class="accordion__title" id="faq-5" aria-expanded="false"
+									aria-controls="faq-content-5">Що робити, якщо мені відмовлять у візі
+									чи&nbsp;реєстрації?
 								</div>
-								<svg class="accordion__title-icon" xmlns="http://www.w3.org/2000/svg" width="50"
-									height="50" fill="none" viewBox="8455 4145 50 50">
+								<svg class="accordion__title-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+									width="50" height="50" fill="none" viewBox="8455 4145 50 50">
 									<g class="icon icon-tabler icons-tabler-outline icon-tabler-plane"
 										style="fill:#000">
 										<path fill="none" d="M8455 4145h50v50h-50z" class="fills" style="fill:none" />
@@ -454,7 +465,7 @@
 										</g>
 									</g>
 								</svg>
-								<div class="accordion__content">
+								<div class="accordion__content" id="faq-content-5" role="region">
 									<p class="accordion__text">
 										Ми розбираємо причину відмови, <span class="accordion__text-devider">коригуємо
 											пакет документів і&nbsp;супроводжуємо вас до&nbsp;результату. <span
@@ -463,10 +474,11 @@
 									</p>
 								</div>
 							</div>
-							<div class="accordion__item">
-								<div class="accordion__title">Чи працюєте ви з громадянами всіх країн?</div>
-								<svg class="accordion__title-icon" xmlns="http://www.w3.org/2000/svg" width="50"
-									height="50" fill="none" viewBox="8455 4145 50 50">
+							<div class="accordion__item" role="region" aria-labelledby="faq-6">
+								<div class="accordion__title" id="faq-6" aria-expanded="false"
+									aria-controls="faq-content-6">Чи працюєте ви з&nbsp;громадянами всіх країн?</div>
+								<svg class="accordion__title-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+									width="50" height="50" fill="none" viewBox="8455 4145 50 50">
 									<g class="icon icon-tabler icons-tabler-outline icon-tabler-plane"
 										style="fill:#000">
 										<path fill="none" d="M8455 4145h50v50h-50z" class="fills" style="fill:none" />
@@ -488,7 +500,7 @@
 										</g>
 									</g>
 								</svg>
-								<div class="accordion__content">
+								<div class="accordion__content" id="faq-content-6" role="region">
 									<p class="accordion__text">
 										Ми працюємо з клієнтами з більшості країн.
 										<span class="accordion__text-devider">За окремими юрисдикціями можливі
@@ -497,10 +509,11 @@
 									</p>
 								</div>
 							</div>
-							<div class="accordion__item">
-								<div class="accordion__title">Які способи оплати доступні?</div>
-								<svg class="accordion__title-icon" xmlns="http://www.w3.org/2000/svg" width="50"
-									height="50" fill="none" viewBox="8455 4145 50 50">
+							<div class="accordion__item" role="region" aria-labelledby="faq-7">
+								<div class="accordion__title" id="faq-7" aria-expanded="false"
+									aria-controls="faq-content-7">Які способи оплати доступні?</div>
+								<svg class="accordion__title-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+									width="50" height="50" fill="none" viewBox="8455 4145 50 50">
 									<g class="icon icon-tabler icons-tabler-outline icon-tabler-plane"
 										style="fill:#000">
 										<path fill="none" d="M8455 4145h50v50h-50z" class="fills" style="fill:none" />
@@ -522,7 +535,7 @@
 										</g>
 									</g>
 								</svg>
-								<div class="accordion__content">
+								<div class="accordion__content" id="faq-content-7" role="region">
 									<p class="accordion__text">
 										Доступно кілька варіантів оплати, включно з&nbsp;банківськими переказами
 										та&nbsp;криптовалютою.
@@ -531,10 +544,11 @@
 									</p>
 								</div>
 							</div>
-							<div class="accordion__item">
-								<div class="accordion__title">Що входить у вартість обраного пакета?</div>
-								<svg class="accordion__title-icon" xmlns="http://www.w3.org/2000/svg" width="50"
-									height="50" fill="none" viewBox="8455 4145 50 50">
+							<div class="accordion__item" role="region" aria-labelledby="faq-8">
+								<div class="accordion__title" id="faq-8" aria-expanded="false"
+									aria-controls="faq-content-8">Що входить у вартість обраного пакета?</div>
+								<svg class="accordion__title-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+									width="50" height="50" fill="none" viewBox="8455 4145 50 50">
 									<g class="icon icon-tabler icons-tabler-outline icon-tabler-plane"
 										style="fill:#000">
 										<path fill="none" d="M8455 4145h50v50h-50z" class="fills" style="fill:none" />
@@ -556,7 +570,7 @@
 										</g>
 									</g>
 								</svg>
-								<div class="accordion__content">
+								<div class="accordion__content" id="faq-content-8" role="region">
 									<p class="accordion__text">
 										Наповнення залежить від обраного пакета послуг. <span
 											class="accordion__text-devider">Перед початком роботи менеджер детально
@@ -568,13 +582,13 @@
 						</div>
 					</div>
 					<aside class="faq__media">
-						<img class="faq__media-img" src="../img/faq.webp">
+						<img class="faq__media-img" src="../img/faq.webp" alt="Ілюстрація розділу частих запитань">
 					</aside>
 				</div>
 			</div>
 		</section>
 
-		<dialog class="popup" id="order-popup" aria-labelledby="popup-title">
+		<dialog class="popup" id="order-popup" aria-label="Форма заявки">
 			<div class="popup__inner">
 				<button class="popup__close" type="button" aria-label="Закрыть" data-popup-close>
 					<svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -588,18 +602,23 @@
 					<aside class="popup__aside">
 						<h2 class="popup__title" id="popup-title">Обговорімо деталі вашої візи в&nbsp;Камбоджу</h2>
 						<ul class="popup__features">
-							<li class="popup__feature"><img src="../img/popup_clock.svg" alt="">Відповімо протягом
+							<li class="popup__feature"><img src="../img/popup_clock.svg" alt=""
+									aria-hidden="true">Відповімо протягом
 								години
 							</li>
-							<li class="popup__feature"><img src="../img/popup_stat.svg" alt="">Індивідуальний підхід
+							<li class="popup__feature"><img src="../img/popup_stat.svg" alt=""
+									aria-hidden="true">Індивідуальний підхід
 							</li>
-							<li class="popup__feature"><img src="../img/popup_sheet.svg" alt=""> Допоможемо зібрати
+							<li class="popup__feature"><img src="../img/popup_sheet.svg" alt="" aria-hidden="true">
+								Допоможемо зібрати
 								документи
 							</li>
-							<li class="popup__feature"><img src="../img/popup_check.svg" alt=""> Підтримка на кожному
+							<li class="popup__feature"><img src="../img/popup_check.svg" alt="" aria-hidden="true">
+								Підтримка на кожному
 								етапі
 							</li>
-							<li class="popup__feature"><img src="../img/popup_lock.svg" alt="">Ваші дані захищені
+							<li class="popup__feature"><img src="../img/popup_lock.svg" alt="" aria-hidden="true">Ваші
+								дані захищені
 							</li>
 						</ul>
 					</aside>
@@ -617,13 +636,13 @@
 									<label class="form__card-label" for="name">Ім’я<span
 											class="label-required">*</span></label>
 									<input class="form__card-input" type="text" maxlength="31" id="name" name="name"
-										placeholder="Іван" required>
+										placeholder="Іван" autocomplete="off" required>
 								</div>
 								<div class="form__card-group">
 									<label class="form__card-label" for="surname">Прізвище<span
 											class="label-required">*</span></label>
 									<input class="form__card-input" type="text" maxlength="31" id="surname"
-										name="surname" placeholder="Іванов" required>
+										name="surname" placeholder="Іванов" autocomplete="off" required>
 								</div>
 							</div>
 
@@ -631,14 +650,14 @@
 								<label class="form__card-label" for="email">Пошта<span
 										class="label-required">*</span></label>
 								<input class="form__card-input" type="email" id="email" maxlength="100" name="email"
-									placeholder="example@gmail.com" required>
+									placeholder="example@gmail.com" autocomplete="off" required>
 							</div>
 
 							<div class="form__card-group">
 								<label class="form__card-label" for="phone">Телефон<span
 										class="label-required">*</span></label>
 								<input class="form__card-input" type="tel" inputmode="tel" maxlength="15" id="phone"
-									name="phone" placeholder="+380" required>
+									name="phone" placeholder="+380" autocomplete="off" required>
 							</div>
 
 							<div class="form__card-group">
@@ -656,7 +675,8 @@
 								<label class="form__card-label" id="service-label">Оберіть пакет<span
 										class="label-required">*</span></label>
 								<div class="form__card-wrap custom-select" id="custom-service-select">
-									<input type="hidden" id="service" name="service" value="" required>
+									<input type="hidden" id="service" name="service" value="" autocomplete="off"
+										required>
 									<button type="button" class="form__card-input custom-select__button is-placeholder"
 										aria-haspopup="listbox" aria-expanded="false">
 										<span class="custom-select__text">Вибрати...</span>
@@ -724,9 +744,9 @@
 					<p class="footer__socials-text">Ваш надійний партнер
 						у Південно-Східній Азії</p>
 					<div class="footer__socials-links">
-						<a class="footer__socials-link" href="#">
-							<svg class="socials-link__img" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-								fill="none" viewBox="7450.071 5400 50 50">
+						<a class="footer__socials-link" href="https://t.me/ApsaraEast_bot" aria-label="Telegram">
+							<svg class="socials-link__img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+								width="50" height="50" fill="none" viewBox="7450.071 5400 50 50">
 								<defs>
 									<clipPath id="a" class="frame-clip frame-clip-def">
 										<rect width="50" height="50" x="7450.071" y="5400" rx="10" ry="10" />
@@ -769,9 +789,9 @@
 								</g>
 							</svg>
 						</a>
-						<a class="footer__socials-link" href="#">
-							<svg class="socials-link__img" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-								viewBox="7537.357 5400 50 50" fill="none">
+						<a style="display: none;" class="footer__socials-link" href="#" aria-label="Whatsapp">
+							<svg class="socials-link__img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+								width="50" height="50" viewBox="7536.857 5400 50 50" fill="none">
 								<path d="m7548.858 5438.5 2.475-5.7a13.5 13.5 0 1 1 5.1 4.35z" stroke="#27d367"
 									stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 								<path
@@ -783,8 +803,8 @@
 				</div>
 				<div class="footer__contacts">
 					<h3 class="footer__column-title">Контакти</h3>
-					<p class="footer__contact-text">apsara.support@gmail.com</p>
-					<a class="footer__contact-text" href="tel:+76667777777">+76667777777</a>
+					<a class="footer__contact-text" href="mailto:apsara.support@gmail.com">apsara.support@gmail.com</a>
+					<a class="footer__contact-text" href="tel:+85598686680">+855&nbsp;98&nbsp;686&nbsp;680</a>
 				</div>
 				<div class="footer__open-hours">
 					<h3 class="footer__column-title">Графік роботи</h3>
@@ -804,9 +824,9 @@
 				<div class="footer__pay-methods">
 					<h3 class="footer__column-title">Приймаємо оплату</h3>
 					<div class="pay-methods">
-						<img class="pay-method__icon" src="../img/footer_mastercard.svg">
-						<img class="pay-method__icon" src="../img/footer_visa.svg">
-						<img class="pay-method__icon" src="../img/footer_crypto.svg">
+						<img class="pay-method__icon" src="../img/footer_mastercard.svg" alt="Mastercard">
+						<img class="pay-method__icon" src="../img/footer_visa.svg" alt="Visa">
+						<img class="pay-method__icon" src="../img/footer_crypto.svg" alt="Криптовалюта">
 					</div>
 
 				</div>

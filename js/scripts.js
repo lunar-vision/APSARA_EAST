@@ -266,6 +266,7 @@ document.querySelectorAll('[data-popup-open]').forEach((btn) => {
 
 		closeMenu();
 		popup.showModal();
+		document.getElementById('form_start_time').value = Date.now();
 	});
 });
 
@@ -382,6 +383,10 @@ function makeLeadId() {
 }
 
 form.addEventListener("submit", async (e) => {
+	const website = form.querySelector('input[name="website"]');
+	if (website && website.value.trim() !== '') return;
+	const startTime = form.querySelector('input[name="form_start_time"]');
+	if (startTime && startTime.value && (Date.now() - parseInt(startTime.value) < 3000)) return;
 	e.preventDefault();
 
 	if (!selectedCountry) return;
