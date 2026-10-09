@@ -257,7 +257,8 @@
 								в&nbsp;країні
 							</li>
 						</ul>
-						<button class="service__button" type="button" data-popup-open data-service="Standart">Обрати</button>
+						<button class="service__button" type="button" data-popup-open
+							data-service="Standart">Обрати</button>
 					</article>
 					<article class="service__card service__card--invert">
 						<p class="service__card-badge">ТЕРМІНОВИЙ</p>
@@ -280,7 +281,8 @@
 
 
 						</ul>
-						<button class="service__button" type="button" data-popup-open data-service="Standart+">Обрати</button>
+						<button class="service__button" type="button" data-popup-open
+							data-service="Standart+">Обрати</button>
 					</article>
 				</div>
 			</div>
@@ -624,12 +626,9 @@
 					</aside>
 
 					<div class="popup__body">
-						<form id="lead-form" action="https://api.web3forms.com/submit" method="POST">
+						<form id="lead-form">
 
 							<input type="hidden" name="lead_id" />
-							<input type="hidden" name="access_key" value="13dbfdde-07b7-48f8-85df-a9c40801085a">
-							<input type="hidden" name="subject" value="Нова заявка з сайту APSARA EAST">
-							<input type="hidden" name="redirect" value="https://web3forms.com/success">
 
 							<div class="form__card-row">
 								<div class="form__card-group">
@@ -653,12 +652,20 @@
 									placeholder="example@gmail.com" autocomplete="off" required>
 							</div>
 
+							<div class="honey" aria-hidden="true">
+								<label for="website">Website</label>
+								<input type="text" id="website" name="website" tabindex="-1" autocomplete="off"
+									value="" />
+							</div>
+
 							<div class="form__card-group">
 								<label class="form__card-label" for="phone">Телефон<span
 										class="label-required">*</span></label>
 								<input class="form__card-input" type="tel" inputmode="tel" maxlength="15" id="phone"
 									name="phone" placeholder="+380" autocomplete="off" required>
 							</div>
+
+							<input type="hidden" name="form_start_time" id="form_start_time" value="" />
 
 							<div class="form__card-group">
 								<label class="form__card-label" for="country-input">
@@ -688,6 +695,10 @@
 											Standart+</li>
 									</ul>
 								</div>
+							</div>
+
+							<div class="hp-field" aria-hidden="true">
+								<input type="text" name="hp_email" id="hp_email" tabindex="-1" autocomplete="off" />
 							</div>
 
 							<div class="form__card-row">
