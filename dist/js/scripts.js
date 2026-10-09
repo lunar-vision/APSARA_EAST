@@ -424,13 +424,16 @@ form.addEventListener("submit", async (e) => {
 		});
 
 		if (res.ok) {
-
-			form.submit();
+			alert("Заявка отправлена!");
+			popup.close();
+			resetLeadForm();
 		} else {
+			alert("Ошибка сервера: " + res.status);
 			if (submitBtn) submitBtn.disabled = false;
 			console.error("Ошибка сервера:", res.status);
 		}
 	} catch (err) {
+		alert("Сетевая ошибка: " + err);
 		if (submitBtn) submitBtn.disabled = false;
 		console.error("Сетевая ошибка:", err);
 	}
