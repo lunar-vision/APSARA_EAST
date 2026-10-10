@@ -352,6 +352,22 @@ function resetLeadForm() {
 
 window.addEventListener('pageshow', resetLeadForm);
 
+function showFormToast(message, isSuccess = true) {
+	const toast = document.getElementById('form-toast');
+	const text = document.getElementById('form-toast-text');
+	if (!toast || !text) return;
+	text.textContent = message;
+	toast.classList.remove('is-success', 'is-error', 'is-visible');
+	toast.classList.add(isSuccess ? 'is-success' : 'is-error', 'is-visible');
+	setTimeout(() => hideFormToast(), 5000);
+}
+
+function hideFormToast() {
+	const toast = document.getElementById('form-toast');
+	if (!toast) return;
+	toast.classList.remove('is-visible');
+}
+
 //lead_id generation
 const form = document.getElementById("lead-form");
 
@@ -424,16 +440,16 @@ form.addEventListener("submit", async (e) => {
 		});
 
 		if (res.ok) {
-			alert("Заявка отправлена!");
+			showFormToast("Заявка отправлена!", true);
 			popup.close();
 			resetLeadForm();
 		} else {
-			alert("Ошибка сервера: " + res.status);
+			showFormToast("Ошибка сервера: " + res.status, false);
 			if (submitBtn) submitBtn.disabled = false;
 			console.error("Ошибка сервера:", res.status);
 		}
 	} catch (err) {
-		alert("Сетевая ошибка: " + err);
+		showFormToast("Сетевая ошибка: " + err, false);
 		if (submitBtn) submitBtn.disabled = false;
 		console.error("Сетевая ошибка:", err);
 	}
