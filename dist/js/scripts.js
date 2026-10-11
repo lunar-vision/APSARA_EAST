@@ -97,9 +97,9 @@ const pageLang = (document.documentElement.lang || 'en').slice(0, 2).toLowerCase
 const uiLang = ['ru', 'uk'].includes(pageLang) ? pageLang : 'en';
 
 const UI = {
-	en: { notFound: 'Nothing found', chooseService: 'Select...' },
-	ru: { notFound: 'Ничего не найдено', chooseService: 'Выбрать...' },
-	uk: { notFound: 'Нічого не знайдено', chooseService: 'Вибрати...' },
+	en: { notFound: 'Nothing found', chooseService: 'Select...', success: 'Application sent!', error: 'Server error' },
+	ru: { notFound: 'Ничего не найдено', chooseService: 'Выбрать...', success: 'Заявка отправлена!', error: 'Ошибка сервера' },
+	uk: { notFound: 'Нічого не знайдено', chooseService: 'Вибрати...', success: 'Заявку надіслано!', error: 'Помилка сервера' },
 };
 
 const countryCodes = [
@@ -440,16 +440,16 @@ form.addEventListener("submit", async (e) => {
 		});
 
 		if (res.ok) {
-			showFormToast("Заявка отправлена!", true);
+			showFormToast(UI[uiLang].success, true);
 			popup.close();
 			resetLeadForm();
 		} else {
-			showFormToast("Ошибка сервера: " + res.status, false);
+			showFormToast(UI[uiLang].error + ": " + res.status, false);
 			if (submitBtn) submitBtn.disabled = false;
 			console.error("Ошибка сервера:", res.status);
 		}
 	} catch (err) {
-		showFormToast("Сетевая ошибка: " + err, false);
+		showFormToast(UI[uiLang].error + ": " + err, false);
 		if (submitBtn) submitBtn.disabled = false;
 		console.error("Сетевая ошибка:", err);
 	}
