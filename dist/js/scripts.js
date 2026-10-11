@@ -513,6 +513,7 @@ form.addEventListener("submit", async (e) => {
 
 		if (res.ok) {
 			showFormToast(UI[uiLang].success, true);
+			if (submitBtn) submitBtn.disabled = false;
 			popup.close();
 			resetLeadForm();
 		} else {
