@@ -431,7 +431,7 @@ body:has(.header__nav.active) {
 .form-toast.is-visible {
   opacity: 1;
   pointer-events: auto;
-  transform: translateY(0);
+  transform: translateY(80px);
 }
 .form-toast.is-error .form-toast__inner {
   background: linear-gradient(118deg, #2a0f0f 72%, #e8a93d 105%);

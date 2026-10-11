@@ -471,7 +471,7 @@ body:has(.header__nav.active) {
 	&.is-visible {
 		opacity: 1;
 		pointer-events: auto;
-		transform: translateY(0);
+		transform: translateY(80px);
 	}
 
 	&.is-error .form-toast__inner {
