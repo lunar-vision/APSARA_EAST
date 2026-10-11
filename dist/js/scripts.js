@@ -48,7 +48,7 @@ const isOpera =
 	navigator.userAgent.includes('Opera');
 
 const isLibreWolf = navigator.userAgent.includes('LibreWolf');
-const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+const isSafari = /safari/i.test(navigator.userAgent) && !/chrome|android/i.test(navigator.userAgent);
 
 let scrollRafId = null;
 
