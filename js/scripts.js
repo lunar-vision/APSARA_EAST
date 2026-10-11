@@ -48,6 +48,7 @@ const isOpera =
 	navigator.userAgent.includes('Opera');
 
 const isLibreWolf = navigator.userAgent.includes('LibreWolf');
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
 let scrollRafId = null;
 
@@ -67,7 +68,7 @@ function smoothScrollTo(targetY, duration = 600) {
 		return;
 	}
 
-	if (isLibreWolf) {
+	if (isLibreWolf || isSafari) {
 		window.scrollTo({ top: targetY, behavior: 'smooth' });
 		return;
 	}
