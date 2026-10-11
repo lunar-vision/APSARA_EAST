@@ -43,6 +43,78 @@ function cleanUrl() {
 	history.replaceState(null, '', window.location.pathname + window.location.search);
 }
 
+const isOpera =
+	navigator.userAgent.includes('OPR/') ||
+	navigator.userAgent.includes('Opera');
+
+const isLibreWolf = navigator.userAgent.includes('LibreWolf');
+
+let scrollRafId = null;
+
+function cancelScroll() {
+	if (scrollRafId !== null) {
+		cancelAnimationFrame(scrollRafId);
+		scrollRafId = null;
+	}
+}
+
+function smoothScrollTo(targetY, duration = 600) {
+	cancelScroll();
+
+	if (isOpera) {
+		const el = document.scrollingElement || document.documentElement;
+		el.scrollTop = targetY;
+		return;
+	}
+
+	if (isLibreWolf) {
+		window.scrollTo({ top: targetY, behavior: 'smooth' });
+		return;
+	}
+
+	const el = document.scrollingElement || document.documentElement;
+	const startY = el.scrollTop;
+	const diff = targetY - startY;
+
+	if (Math.abs(diff) < 1) {
+		el.scrollTop = targetY;
+		return;
+	}
+
+	let startTime = null;
+
+	const ease = (t) => (t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t);
+
+	function step(timestamp) {
+		if (!startTime) startTime = timestamp;
+		const progress = Math.min((timestamp - startTime) / duration, 1);
+		el.scrollTop = startY + diff * ease(progress);
+
+		if (progress < 1) {
+			scrollRafId = requestAnimationFrame(step);
+		} else {
+			el.scrollTop = targetY;
+			scrollRafId = null;
+		}
+	}
+
+	scrollRafId = requestAnimationFrame(step);
+}
+
+window.addEventListener('wheel', cancelScroll, { passive: true });
+window.addEventListener('touchstart', cancelScroll, { passive: true });
+
+function scrollToElement(target) {
+	const marginTop =
+		parseFloat(getComputedStyle(target).scrollMarginTop) || 0;
+	const y = target.getBoundingClientRect().top + window.scrollY - marginTop;
+	smoothScrollTo(y);
+}
+
+function scrollToTop() {
+	smoothScrollTo(0);
+}
+
 window.addEventListener('DOMContentLoaded', function () {
 	const hash = window.location.hash;
 	if (!hash) return;
@@ -51,7 +123,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
 	if (target) {
 		setTimeout(() => {
-			target.scrollIntoView({ behavior: 'smooth' });
+			scrollToElement(target);
 			cleanUrl();
 		}, 100);
 	} else {
@@ -68,7 +140,7 @@ logo?.addEventListener('click', function (e) {
 
 	if (isHomePage) {
 		e.preventDefault();
-		window.scrollTo({ top: 0, behavior: 'smooth' });
+		scrollToTop();
 		cleanUrl();
 	}
 });
@@ -80,7 +152,7 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 		if (!target) return;
 
 		e.preventDefault();
-		target.scrollIntoView({ behavior: 'smooth' });
+		scrollToElement(target);
 		cleanUrl();
 	});
 });
