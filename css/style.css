@@ -426,6 +426,7 @@ body:has(.header__nav.active) {
   opacity: 0;
   pointer-events: none;
   transform: translateY(-20px);
+  touch-action: none;
   transition: opacity 0.35s ease, transform 0.35s ease;
 }
 .form-toast.is-visible {
