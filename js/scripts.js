@@ -68,11 +68,6 @@ function smoothScrollTo(targetY, duration = 600) {
 		return;
 	}
 
-	if (isLibreWolf || (navigator.userAgent.includes('Safari') && !navigator.userAgent.includes('Chrome') && !navigator.userAgent.includes('Chromium'))) {
-		window.scrollTo({ top: targetY, behavior: 'smooth' });
-		return;
-	}
-
 	const el = document.scrollingElement || document.documentElement;
 	const startY = el.scrollTop;
 	const diff = targetY - startY;
@@ -106,6 +101,12 @@ window.addEventListener('wheel', cancelScroll, { passive: true });
 window.addEventListener('touchstart', cancelScroll, { passive: true });
 
 function scrollToElement(target) {
+	const isSafariOrLibre = isLibreWolf || (navigator.userAgent.includes('Safari') && !navigator.userAgent.includes('Chrome') && !navigator.userAgent.includes('Chromium'));
+	if (isSafariOrLibre) {
+		target.scrollIntoView({ behavior: 'smooth' });
+		return;
+	}
+
 	const marginTop =
 		parseFloat(getComputedStyle(target).scrollMarginTop) || 0;
 	const y = target.getBoundingClientRect().top + window.scrollY - marginTop;
