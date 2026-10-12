@@ -47,7 +47,6 @@ const isOpera =
 	navigator.userAgent.includes('OPR/') ||
 	navigator.userAgent.includes('Opera');
 
-const isLibreWolf = navigator.userAgent.includes('LibreWolf');
 const isSafari = navigator.vendor && navigator.vendor.includes('Apple');
 
 let scrollRafId = null;
@@ -101,8 +100,8 @@ window.addEventListener('wheel', cancelScroll, { passive: true });
 window.addEventListener('touchstart', cancelScroll, { passive: true });
 
 function scrollToElement(target) {
-	const isSafariOrLibre = isLibreWolf || (navigator.userAgent.includes('Safari') && !navigator.userAgent.includes('Chrome') && !navigator.userAgent.includes('Chromium'));
-	if (isSafariOrLibre) {
+	const isSafariOnly = navigator.userAgent.includes('Safari') && !navigator.userAgent.includes('Chrome') && !navigator.userAgent.includes('Chromium');
+	if (isSafariOnly) {
 		target.scrollIntoView({ behavior: 'smooth' });
 		return;
 	}
