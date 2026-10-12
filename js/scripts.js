@@ -68,7 +68,7 @@ function smoothScrollTo(targetY, duration = 600) {
 		return;
 	}
 
-	if (isLibreWolf || isSafari) {
+	if (isLibreWolf || (navigator.userAgent.includes('Safari') && !navigator.userAgent.includes('Chrome') && !navigator.userAgent.includes('Chromium'))) {
 		window.scrollTo({ top: targetY, behavior: 'smooth' });
 		return;
 	}
