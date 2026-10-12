@@ -113,6 +113,11 @@ function scrollToElement(target) {
 }
 
 function scrollToTop() {
+	const isSafariOnly = navigator.userAgent.includes('Safari') && !navigator.userAgent.includes('Chrome') && !navigator.userAgent.includes('Chromium');
+	if (isSafariOnly) {
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+		return;
+	}
 	smoothScrollTo(0);
 }
 
