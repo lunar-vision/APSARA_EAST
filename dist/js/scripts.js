@@ -43,10 +43,6 @@ function cleanUrl() {
 	history.replaceState(null, '', window.location.pathname + window.location.search);
 }
 
-const isOpera =
-	navigator.userAgent.includes('OPR/') ||
-	navigator.userAgent.includes('Opera');
-
 const isSafari = navigator.vendor && navigator.vendor.includes('Apple');
 
 let scrollRafId = null;
@@ -60,12 +56,6 @@ function cancelScroll() {
 
 function smoothScrollTo(targetY, duration = 600) {
 	cancelScroll();
-
-	if (isOpera) {
-		const el = document.scrollingElement || document.documentElement;
-		el.scrollTop = targetY;
-		return;
-	}
 
 	const el = document.scrollingElement || document.documentElement;
 	const startY = el.scrollTop;
