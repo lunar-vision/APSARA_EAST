@@ -96,10 +96,12 @@ function scrollToElement(target) {
 		return;
 	}
 
-	const marginTop =
-		parseFloat(getComputedStyle(target).scrollMarginTop) || 0;
-	const y = target.getBoundingClientRect().top + window.scrollY - marginTop;
-	smoothScrollTo(y);
+	requestAnimationFrame(() => {
+		const rect = target.getBoundingClientRect();
+		const marginTop = parseFloat(getComputedStyle(target).scrollMarginTop) || 0;
+		const y = rect.top + window.scrollY - marginTop;
+		smoothScrollTo(y);
+	});
 }
 
 function scrollToTop() {

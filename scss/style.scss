@@ -500,6 +500,8 @@ body:has(.header__nav.active) {
 		font-weight: 700;
 		color: $main-color;
 		flex-shrink: 0;
+		position: relative;
+		top: -1px;
 	}
 
 	.form-toast__text {
