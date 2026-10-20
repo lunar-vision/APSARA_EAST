@@ -19,7 +19,6 @@ document.querySelectorAll('.accordion__item').forEach((item) => {
 	});
 });
 
-
 //burger-menu
 const burger = document.querySelector('.header__burger');
 const nav = document.querySelector('.header__nav');
@@ -90,7 +89,10 @@ window.addEventListener('wheel', cancelScroll, { passive: true });
 window.addEventListener('touchstart', cancelScroll, { passive: true });
 
 function scrollToElement(target) {
-	const isSafariOnly = navigator.userAgent.includes('Safari') && !navigator.userAgent.includes('Chrome') && !navigator.userAgent.includes('Chromium');
+	const isSafariOnly =
+		navigator.userAgent.includes('Safari') &&
+		!navigator.userAgent.includes('Chrome') &&
+		!navigator.userAgent.includes('Chromium');
 	if (isSafariOnly) {
 		target.scrollIntoView({ behavior: 'smooth' });
 		return;
@@ -105,7 +107,10 @@ function scrollToElement(target) {
 }
 
 function scrollToTop() {
-	const isSafariOnly = navigator.userAgent.includes('Safari') && !navigator.userAgent.includes('Chrome') && !navigator.userAgent.includes('Chromium');
+	const isSafariOnly =
+		navigator.userAgent.includes('Safari') &&
+		!navigator.userAgent.includes('Chrome') &&
+		!navigator.userAgent.includes('Chromium');
 	if (isSafariOnly) {
 		window.scrollTo({ top: 0, behavior: 'smooth' });
 		return;
@@ -167,9 +172,24 @@ const pageLang = (document.documentElement.lang || 'en').slice(0, 2).toLowerCase
 const uiLang = ['ru', 'uk'].includes(pageLang) ? pageLang : 'en';
 
 const UI = {
-	en: { notFound: 'Nothing found', chooseService: 'Select...', success: 'Application sent!', error: 'Server error' },
-	ru: { notFound: 'Ничего не найдено', chooseService: 'Выбрать...', success: 'Заявка отправлена!', error: 'Ошибка сервера' },
-	uk: { notFound: 'Нічого не знайдено', chooseService: 'Вибрати...', success: 'Заявку надіслано!', error: 'Помилка сервера' },
+	en: {
+		notFound: 'Nothing found',
+		chooseService: 'Select...',
+		success: 'Application sent!',
+		error: 'Server error',
+	},
+	ru: {
+		notFound: 'Ничего не найдено',
+		chooseService: 'Выбрать...',
+		success: 'Заявка отправлена!',
+		error: 'Ошибка сервера',
+	},
+	uk: {
+		notFound: 'Нічого не знайдено',
+		chooseService: 'Вибрати...',
+		success: 'Заявку надіслано!',
+		error: 'Помилка сервера',
+	},
 };
 
 const countryCodes = [
@@ -321,7 +341,6 @@ selectItems.forEach((item) => {
 	});
 });
 
-
 document.addEventListener('pointerdown', (e) => {
 	if (!customSelect.contains(e.target)) {
 		customSelect.classList.remove('is-open');
@@ -399,7 +418,6 @@ phoneInputs.forEach((input) => {
 	});
 });
 
-
 function filterInput(input, pattern) {
 	input.addEventListener('input', () => {
 		input.value = input.value.replace(pattern, '');
@@ -410,14 +428,13 @@ filterInput(document.getElementById('name'), namePattern);
 filterInput(document.getElementById('surname'), namePattern);
 filterInput(countryInput, namePattern);
 
-
-
 function resetLeadForm() {
 	form.reset();
 	setCustomService('');
 	setServiceError(false);
 	selectedCountry = null;
 	countrySelectWrap.classList.remove('is-open');
+	countrySelectWrap.classList.remove('is-error');
 }
 
 window.addEventListener('pageshow', resetLeadForm);
@@ -469,13 +486,20 @@ function makeLeadId() {
 }
 
 form.addEventListener("submit", async (e) => {
-	const website = form.querySelector('input[name="website"]');
-	if (website && website.value.trim() !== '') return;
-	const startTime = form.querySelector('input[name="form_start_time"]');
-	if (startTime && startTime.value && (Date.now() - parseInt(startTime.value) < 3000)) return;
 	e.preventDefault();
 
-	if (!selectedCountry) return;
+	const website = form.querySelector('input[name="website"]');
+	if (website && website.value.trim() !== '') return;
+
+	const startTime = form.querySelector('input[name="form_start_time"]');
+	if (startTime && startTime.value && Date.now() - parseInt(startTime.value) < 3000) return;
+
+	if (!selectedCountry) {
+		countrySelectWrap.classList.add('is-error');
+		countryInput.focus();
+		return;
+	}
+	countrySelectWrap.classList.remove('is-error');
 
 	if (!hiddenServiceInput.value) {
 		setServiceError(true);
@@ -498,7 +522,6 @@ form.addEventListener("submit", async (e) => {
 
 	const payload = Object.fromEntries(formData.entries());
 
-
 	const submitBtn = form.querySelector(".form__card-submit");
 	if (submitBtn) submitBtn.disabled = true;
 
@@ -506,22 +529,21 @@ form.addEventListener("submit", async (e) => {
 		const res = await fetch(SCRIPT_URL, {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
-			body: JSON.stringify(payload)
+			body: JSON.stringify(payload),
 		});
 
 		if (res.ok) {
 			showFormToast(UI[uiLang].success, true);
-			if (submitBtn) submitBtn.disabled = false;
 			popup.close();
 			resetLeadForm();
 		} else {
-			showFormToast(UI[uiLang].error + ": " + res.status, false);
-			if (submitBtn) submitBtn.disabled = false;
 			console.error("Ошибка сервера:", res.status);
+			showFormToast(UI[uiLang].error, false);
 		}
 	} catch (err) {
-		showFormToast(UI[uiLang].error + ": " + err, false);
-		if (submitBtn) submitBtn.disabled = false;
 		console.error("Сетевая ошибка:", err);
+		showFormToast(UI[uiLang].error, false);
+	} finally {
+		if (submitBtn) submitBtn.disabled = false;
 	}
 });
