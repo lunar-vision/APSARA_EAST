@@ -547,3 +547,16 @@ form.addEventListener("submit", async (e) => {
 		if (submitBtn) submitBtn.disabled = false;
 	}
 });
+
+//objects shown
+document.querySelectorAll("img").forEach((img) => {
+	if (img.complete) {
+		img.classList.add("is-loaded");
+	} else {
+		img.addEventListener("load", () => img.classList.add("is-loaded"));
+	}
+});
+
+document.fonts.ready.then(() => {
+	document.body.classList.add("fonts-loaded");
+});
