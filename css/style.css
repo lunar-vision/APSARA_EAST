@@ -456,6 +456,8 @@ body:has(.header__nav.active) {
   font-weight: 700;
   color: #e8a93d;
   flex-shrink: 0;
+  position: relative;
+  top: -1px;
 }
 .form-toast .form-toast__text {
   font-family: "Montserrat", sans-serif;
@@ -1072,6 +1074,74 @@ header .header__container .header__actions .header__contact-btn:active {
 }
 .services .services__container .services__inner .service__card.service__card--invert .service__button:active {
   box-shadow: inset 0 0 0 999px rgba(0, 0, 0, 0.2);
+}
+
+.qr {
+  background: #0f1b2e;
+  margin-bottom: 106px;
+}
+.qr .qr__container {
+  text-align: center;
+  padding: 42px 0px;
+}
+.qr .qr__container .qr__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  font-size: 33px;
+  color: #fcfcfc;
+  margin-bottom: 82px;
+}
+.qr .qr__container .qr__inner {
+  max-width: 1064px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.qr .qr__container .qr__inner .qr__card {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+.qr .qr__container .qr__inner .qr__card .qr__card-img {
+  margin-bottom: 25px;
+}
+.qr .qr__container .qr__inner .qr__card .qr__card-inner {
+  display: flex;
+  place-items: center;
+}
+.qr .qr__container .qr__inner .qr__card .qr__card-inner .qr__card-link {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  font-size: 24px;
+  color: #fcfcfc;
+  margin-left: 10px;
+}
+.qr .qr__container .qr__inner .qr__card .qr__card-inner .qr__card-link:hover {
+  color: #e8a93d;
+}
+.qr .qr__container .qr__inner .qr__card .qr__card-inner .qr__card-link:hover::after {
+  width: 40%;
+  opacity: 1;
+}
+.qr .qr__container .qr__inner .qr__card .qr__card-inner .qr__card-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #e8a93d;
+  opacity: 0;
+  transition: width 0.3s ease, opacity 0.3s ease;
 }
 
 .faq {

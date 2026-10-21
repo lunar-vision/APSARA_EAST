@@ -1227,6 +1227,76 @@ header {
 	}
 }
 
+.qr{
+	background: $sec-color--light;
+	margin-bottom: 106px;
+	.qr__container{
+		text-align: center;
+		padding: 42px 0px;
+		.qr__title{
+			font-family: $main-font;
+			font-weight: 700;
+			font-style: normal;
+			line-height: 1.2;
+			letter-spacing: 0px;
+			font-size: 33px;
+			color: $not-white;
+			margin-bottom: 82px;
+		}
+		.qr__inner{
+			max-width: 1064px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			.qr__card{
+				display: flex;
+				flex-direction: column;
+				place-items: center;
+				.qr__card-img{
+					margin-bottom: 25px;
+				}
+				.qr__card-inner{
+					display: flex;
+					place-items: center;
+					.qr__card-link{
+					position: relative;
+					font-family: $main-font;
+					font-weight: 700;
+					font-style: normal;
+					line-height: 1.2;
+					letter-spacing: 0px;
+					font-size: 24px;
+					color: $not-white;
+					margin-left: 10px;
+					&:hover {
+						color: $main-color;
+						&::after {
+							width: 40%;
+							opacity: 1;
+						}
+					}
+					&::after {
+						content: "";
+						position: absolute;
+						left: 50%;
+						bottom: -6px;
+						transform: translateX(-50%);
+						display: block;
+						width: 0;
+						height: 2px;
+						background-color: $main-color;
+						opacity: 0;
+						transition:
+							width 0.3s ease,
+							opacity 0.3s ease;
+					}	
+				}
+				}
+			}
+		}
+	}
+}
+
 .faq {
 	margin-bottom: 106px;
 	.faq__container {
