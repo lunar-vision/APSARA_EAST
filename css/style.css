@@ -4276,7 +4276,7 @@ body.fonts-loaded {
 }
 @media (0 < width < 375px) {
   #about {
-    scroll-margin-top: -70px;
+    scroll-margin-bottom: 77px;
   }
   .container,
   header > .header__container {
