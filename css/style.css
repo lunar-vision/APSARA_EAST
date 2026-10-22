@@ -3276,7 +3276,7 @@ body.fonts-loaded {
 }
 @media (440px <= width < 600px) {
   #about {
-    scroll-margin-top: -40px;
+    scroll-margin-top: -50px;
   }
   .container,
   header > .header__container {
@@ -3623,7 +3623,7 @@ body.fonts-loaded {
 }
 @media (390px <= width < 440px) {
   #about {
-    scroll-margin-top: -52px;
+    scroll-margin-top: -50px;
   }
   .container,
   header > .header__container {
@@ -3941,7 +3941,7 @@ body.fonts-loaded {
 }
 @media (375px <= width < 390px) {
   #about {
-    scroll-margin-top: -65px;
+    scroll-margin-top: -55px;
   }
   .container,
   header > .header__container {
@@ -4276,7 +4276,7 @@ body.fonts-loaded {
 }
 @media (0 < width < 375px) {
   #about {
-    scroll-margin-bottom: 77px;
+    scroll-margin-top: -30px;
   }
   .container,
   header > .header__container {
