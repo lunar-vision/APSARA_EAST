@@ -4377,12 +4377,13 @@ body {
 		.hero__container {
 			margin: auto;
 			place-items: center;
+			width: initial;
 			.hero__title {
 				font-size: 48px;
 				text-align: center;
 			}
 			.hero__subtitle {
-				max-width: 366px;
+				max-width: 238px;
 				font-size: 15px;
 				text-align: center;
 				&:lang(ru) {
@@ -4875,6 +4876,7 @@ body {
 	.hero {
 		.hero__container {
 			place-items: center;
+			width: initial;
 			.hero__title {
 				font-size: 43px;
 				text-align: center;
@@ -5331,6 +5333,7 @@ body {
 	.hero {
 		.hero__container {
 			place-items: center;
+			width: initial;
 			.hero__title {
 				font-size: 40px;
 				text-align: center;
@@ -5802,6 +5805,7 @@ body {
 	.hero {
 		.hero__container {
 			place-items: center;
+			width: initial;
 			.hero__title {
 				font-size: 38px;
 				text-align: center;

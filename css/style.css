@@ -3292,13 +3292,14 @@ body.fonts-loaded {
   .hero .hero__container {
     margin: auto;
     place-items: center;
+    width: initial;
   }
   .hero .hero__container .hero__title {
     font-size: 48px;
     text-align: center;
   }
   .hero .hero__container .hero__subtitle {
-    max-width: 366px;
+    max-width: 238px;
     font-size: 15px;
     text-align: center;
   }
@@ -3645,6 +3646,7 @@ body.fonts-loaded {
   }
   .hero .hero__container {
     place-items: center;
+    width: initial;
   }
   .hero .hero__container .hero__title {
     font-size: 43px;
@@ -3956,6 +3958,7 @@ body.fonts-loaded {
   }
   .hero .hero__container {
     place-items: center;
+    width: initial;
   }
   .hero .hero__container .hero__title {
     font-size: 40px;
@@ -4287,6 +4290,7 @@ body.fonts-loaded {
   }
   .hero .hero__container {
     place-items: center;
+    width: initial;
   }
   .hero .hero__container .hero__title {
     font-size: 38px;
