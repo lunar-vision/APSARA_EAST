@@ -3354,6 +3354,11 @@ body {
 }
 
 @media (744px <= width < 1024px) {
+
+	#about {
+	scroll-margin-top: 0px;
+}
+
 	.container,
 	header > .header__container
 	{
@@ -3815,6 +3820,11 @@ body {
 }
 
 @media (600px <= width < 744px) {
+
+	#about {
+	scroll-margin-top: -40px;
+}
+
 	.container,
 	header > .header__container
 	{
@@ -4339,6 +4349,11 @@ body {
 }
 
 @media (440px <= width < 600px) {
+
+	#about {
+	scroll-margin-top: -40px;
+}
+
 	.container,
 	header > .header__container
 	{
@@ -4832,6 +4847,11 @@ body {
 }
 
 @media (390px <= width < 440px) {
+
+	#about {
+	scroll-margin-top: -52px;
+}
+
 	.container,
 	header > .header__container{
 		max-width: calc(100% - 40px);
@@ -5291,6 +5311,11 @@ body {
 }
 
 @media (375px <= width < 390px) {
+
+	#about {
+	scroll-margin-top: -65px;
+}
+
 	.container,
 	header > .header__container{
 		max-width: calc(100% - 40px);
@@ -5762,6 +5787,11 @@ body {
 }
 
 @media (0 < width < 375px) {
+
+	#about {
+	scroll-margin-top: -70px;
+}
+
 	.container,
 	header > .header__container{
 		max-width: calc(100% - 40px);
